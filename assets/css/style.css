@@ -1,0 +1,1858 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+:root {
+  --background: #fbfbfb;
+  --white: #ffffff;
+  --unnamed-color-bbcf3d: #bbcf3d;
+  --progline-color-grey: #707070;
+  --progline-color-green: #bbcf3d;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Sofia Pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  list-style: none;
+}
+
+/* Universal classes usesd accross the website */
+.cta-btn {
+  background-color: #bbcf3d;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.cta-btn:hover {
+  background-color: #cddb75;
+}
+
+.hide-for-desktop {
+  display: none;
+}
+
+/* Front - Page for Invoice & Mobile Number */
+.front-page-container {
+  height: 100vh;
+  overflow: hidden;
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./fakeassets/interior.jpg"); */
+}
+
+.fp-logo {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.fp-logo img {
+  height: 20px;
+}
+
+.fp-bg-img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/5510740@2x.png");
+  height: 34rem;
+}
+
+.fp-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fp-form-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 28vh;
+  margin: auto;
+  width: 85%;
+}
+
+.fp-form-li {
+  display: flex;
+  flex-direction: column;
+}
+
+.fp-form-li label {
+  font-weight: bold;
+  margin: 0.3125rem 0;
+}
+
+.fp-form-li input {
+  padding: 0.625rem;
+  border-radius: 2px;
+  border: 1px solid #545454;
+  font-size: 1.5625rem;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.fp-track {
+  padding: 12px 50px;
+  margin-top: 1.75rem;
+  font-size: 0.625rem;
+  background-color: var(--unnamed-color-bbcf3d);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fp-track a {
+  color: white;
+}
+
+/*----- Top - Navigation ----- || Nav Bar  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.logo {
+  flex: 1;
+  padding: 10px;
+}
+
+.logo img {
+  height: 1rem;
+  padding-top: 15px;
+}
+
+.nav-ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 8vh;
+  align-items: center;
+  margin: 0;
+}
+
+.navlinks {
+  margin-top: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.nav-ul a {
+  font-weight: bold;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+.nav-underline {
+  background: var(--unnamed-color-bbcf3d) 0% 0% no-repeat padding-box;
+  background: #bbcf3d 0% 0% no-repeat padding-box;
+  height: 1vh;
+  margin-top: 0.125rem;
+  opacity: 0;
+  transition: 300ms all ease-in;
+}
+
+.nav-ul li:hover > .nav-underline {
+  opacity: 1;
+}
+
+.need-help {
+  position: relative;
+}
+
+.link-subnav {
+  position: relative;
+}
+
+.sub-nav {
+  position: absolute;
+  right: 0%;
+  left: 1%;
+  top: 55%;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.subnav-view {
+  transform: translateX(0%);
+  top: 55%;
+  right: 0%;
+  left: 1%;
+}
+
+.sub-navitems {
+  cursor: pointer;
+  width: 4rem;
+  font: normal normal bold 0.75rem/1.375rem Sofia Pro;
+  padding: 2px 15px;
+  box-shadow: 0px 0px 18px #00000015;
+  margin: 1px 0;
+  background-color: white;
+  text-align: center;
+  opacity: 0;
+}
+
+.sub-navitems:hover {
+  background-color: #cddb75;
+}
+
+.nav-hr {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hamburger css */
+.hamburger {
+  display: none;
+}
+
+.hamburger li {
+  display: block;
+  border: 1px solid #c3d500;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+  margin: 0.25rem;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  /*----- Top - Navigation ----- || Nav Bar  */
+  .nav-ul {
+    flex: 1.4;
+  }
+}
+
+/* nav animation for mobile */
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateX(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-8px, 4px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-8px, -5px);
+}
+
+/* These styles upto media view port 768 where tested for 768 i-pad  */
+/* First Page after Track button is pressed */
+.ord-container {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0.9375rem;
+  height: 88vh;
+}
+
+.ord-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.ord-rows.ord-row1 {
+  width: 45%;
+  margin-right: 2.1875rem;
+}
+
+.ord-rows.ord-row2 {
+  width: 48%;
+  margin-right: 0.625rem;
+  justify-content: flex-start;
+}
+
+li.ord-details {
+  box-shadow: 0px 0px 18px #00000015;
+  padding: 0.625rem 0;
+  border-radius: 10px;
+  margin-top: 0.9375rem;
+  width: 90%;
+  padding-left: 0.9375rem;
+}
+
+.ord-details:hover {
+  box-shadow: 3px 3px 20px #bbcf3d;
+}
+
+ul.ord-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 85vh;
+  padding-left: 0.625rem;
+  overflow-y: scroll;
+  margin-top: 2.9375rem;
+  padding-right: 0.3125rem;
+}
+
+ul.ord-lists::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #707070;
+}
+
+ul.ord-lists::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+ul.ord-lists::-webkit-scrollbar-thumb {
+  border: 1px solid #707070;
+  background-color: #707070;
+}
+
+.ord-title {
+  text-align: center;
+  position: fixed;
+  width: 45%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.ord-cus-container {
+  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  padding: 0.9375rem 0.8125rem;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0.9375rem 0;
+  margin-top: 0;
+}
+
+.ord-cus-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+ul.ord-cus-ul {
+  padding-left: 0;
+}
+
+li.ord-details p {
+  font: normal normal normal 0.8125rem Helvetica;
+}
+
+ul.ord-cus-ul li p {
+  font: normal normal normal 0.8125rem Helvetica;
+  line-height: 1.25rem;
+}
+
+ul.ord-filter-items {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cacaca;
+  align-items: center;
+  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  padding: 0rem 0.3125rem;
+  background-color: #bbcf3d;
+  margin: 0;
+}
+
+ul.ord-filter-items li p {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.75rem;
+}
+
+li.ord-fil-title img {
+  display: none;
+}
+
+ul.ord-filter-items li label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+ul.ord-filter-items li select {
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: #b3b3b3;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Sofia Pro";
+  width: 90px;
+}
+
+li.ord-details p {
+  margin: 10px 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+/* Delivery, Return, Complaint Page ---- Order Detalis & Customer Information  */
+.dl-item1-container {
+  display: none;
+}
+
+.dl-container {
+  width: auto;
+  height: 80vh;
+  grid-gap: 0.625rem;
+  padding: 1.625rem 2rem;
+  margin: auto auto;
+  display: grid;
+}
+
+.dl-btn-three {
+  padding: 11px 5px;
+  font-size: 0.4375rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dl-item-title {
+  letter-spacing: 1px;
+  text-align: center;
+  font: normal normal bold 1.125rem/1.5rem Sofia Pro;
+  margin-top: 0.625rem;
+}
+
+.dl-item {
+  padding: 1.25rem 1.25rem 0rem 1.25rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dl-item:hover {
+  box-shadow: 0px 1px 10px #bbcf3d;
+}
+
+.dl-item-ul {
+  padding-left: 0.9375rem;
+}
+
+.dl-item-ul li p {
+  text-align: left;
+  font: normal normal normal 1.1rem/1.5rem Helvetica;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dl-btn-container {
+  height: 14%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto;
+  padding-left: 0;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+  box-shadow: 0px 3px 20px #2e476517;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item2 {
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  box-shadow: 0px 0px 18px #00000015;
+}
+
+.item3 {
+  grid-column: 1 / span 4;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.dl-item-tray {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 14.125rem;
+  padding: 0.5rem 1.025rem 0.5rem 0.5rem;
+  align-items: center;
+  scrollbar-width: thin;
+  scrollbar-color: #cddb75 #fff;
+}
+
+.dl-item-tray::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #707070;
+}
+
+.dl-item-tray::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.dl-item-tray::-webkit-scrollbar-thumb {
+  border: 1px solid #707070;
+  background-color: #bbcf3d;
+}
+
+.dl-trayitems {
+  display: flex;
+  align-items: center;
+  height: 245px;
+  margin-bottom: 10px;
+  border-radius: 19px;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 8px 2px;
+}
+
+.dl-trayitems:hover {
+  box-shadow: 3px 3px 20px #bbcf3d;
+}
+
+.dl-tray-img {
+  /* border: 1px solid rgb(179 179 179); */
+  border-radius: initial;
+  opacity: 1;
+  height: 11.5rem;
+  width: 20.5rem;
+  margin-left: 3.4375rem;
+}
+
+.dl-tray-img-1 {
+  background: transparent url("/assets/images/1.png") 0% 0% no-repeat
+    padding-box;
+    background-position: center;
+    background-size: contain;
+}
+
+.dl-tray-img-2 {
+  background: transparent url("/assets/images/2.png") 0% 0% no-repeat
+    padding-box;
+    background-position: center;
+    background-size: contain;
+}
+
+.dl-tray-img-3 {
+  background: transparent url("/assets/images/3.png") 0% 0% no-repeat
+    padding-box;
+    background-position: center;
+    background-size: contain;
+}
+
+.dl-tray-flex {
+  height: 75%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.dl-tray-flex li p {
+  margin: 10px 0;
+  font: normal normal normal 1.1rem/1.3125rem Helvetica;
+}
+
+.dl-tray-col {
+  width: 60%;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+}
+
+.view-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.view-btn button {
+  padding: 5px 12px;
+  font-size: 0.6875rem;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6vh;
+  padding: 0 15px;
+}
+
+.home-btn button {
+  padding: 15px 25px;
+  font-size: 10px;
+}
+
+/* Styles for viewdetails.html page where the shipment progress bar is located */
+.sh-column-container {
+  overflow: hidden;
+}
+
+.sh-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1.375rem 1.5625rem;
+  height: 75vh;
+}
+
+.sh-col1 {
+  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  width: auto;
+  border-radius: 15px;
+  width: 75%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.sh-col1-X {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.sh-col1-X img {
+  height: 1.875rem;
+}
+
+.sh-item-img {
+  background: transparent url("/assets/images/asset-1.png") 0% 0% no-repeat
+    padding-box;
+  border: 1px solid rgb(179 179 179);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10.5rem;
+  width: 15.5rem;
+  margin-top: 2.1875rem;
+  margin-left: 1.25rem;
+}
+
+.sh-item-details {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 11rem;
+}
+
+ul.sh-item-text {
+  width: 50%;
+  padding-left: 0.9375rem;
+  margin: 0;
+  margin-top: 0.9375rem;
+}
+
+p.sh-item-text-li-p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sh-ship-date {
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem;
+}
+
+.sh-ship-icon {
+  background: transparent url("/assets/images/delivery-truck.png") 0% 0% no-repeat
+    padding-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 3rem;
+  width: 3rem;
+}
+
+span.sh-ship-date-text {
+  margin-left: 0.9375rem;
+}
+
+.sh-col2 {
+  margin-left: 0.9375rem;
+  width: 40%;
+}
+
+.sh-col2-cta1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sh-ord-details {
+  margin-top: 0.625rem;
+  border-radius: 15px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  padding: 0.625rem;
+  padding-bottom: 0.3125rem;
+}
+
+.sh-ord-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+ul.sh-ord-ul {
+  padding-left: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sh-cus-info {
+  margin-top: 0.625rem;
+  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  padding: 0.625rem;
+  border-radius: 15px;
+  margin-bottom: 0.625rem;
+  padding-bottom: 1px;
+}
+
+ul.sh-cus-ul {
+  padding-left: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sh-cus-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sh-col2-cta2 {
+  display: flex;
+  justify-content: center;
+}
+
+.sh-btm-cta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  padding: 0 1.5625rem;
+  padding-bottom: 0;
+}
+
+.sh-btm-lft-cta {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.sh-btm-rgt-cta {
+  width: 40%;
+}
+
+.sh-btm-lft-cta button {
+  margin: 0 15px;
+}
+
+.sh-btm-cta {
+  padding: 0.625rem 0.3125rem;
+  font-size: 0.4375rem;
+}
+
+.sh-track-home {
+  width: fit-content;
+  float: right;
+  letter-spacing: 1px;
+}
+
+/* progress bar  */
+/* .progressbar-container {
+  width: 100%;
+  position: relative;
+  height: 8vh;
+}
+
+.progressbar-line {
+  background-color: var(--progline-color-grey);
+  position: absolute;
+  left: 5%;
+  height: 4px;
+  top: 22%;
+  width: 90%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.progressbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  counter-reset: step;
+}
+
+.progressbar-items li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  width: 16%;
+  text-align: center;
+}
+
+.prog-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #bebcbc;
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prog-dot-in-circle {
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #8c8c8c;
+} */
+
+/* New Progress Bar & Above is the old Progress bar*/
+/* Animations For ProgressBar on viewdetails.html page*/
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  33% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  66% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ProgressBar Component Styles - Steps */
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 2rem 0;
+  margin-top: 2.5rem;
+  list-style: none;
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.step--active,
+.step--complete {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.step:not(:last-child):before,
+.step:not(:last-child):after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0.25rem;
+  content: "";
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  will-change: width;
+  z-index: -1;
+}
+
+.step:before {
+  width: 100%;
+  background-color: var(--progline-color-grey);
+}
+
+.step:after {
+  width: 0;
+  background-color: var(--progline-color-green);
+}
+
+.step--complete:after {
+  width: 100% !important;
+  opacity: 1;
+  -webkit-transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.step__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #bebcbc;
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step__icon:before {
+  display: block;
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #8c8c8c;
+}
+
+.step--complete.step--active .step__icon {
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.step--incomplete.step--active .step__icon {
+  border: 2px solid var(--progline-color-green);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.step--complete .step__icon {
+  -webkit-animation: bounce 0.5s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+  content: url("/fakeassets/check.png");
+  background-color: var(--progline-color-green);
+  border-color: var(--progline-color-green);
+  color: #fff;
+}
+
+.step__label {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* .step--incomplete.step--inactive .step__label {
+  color: #e6e7e8;
+}
+
+.step--incomplete.step--active .step__label {
+  color: #fff;
+} */
+
+.step--active .step__label {
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/*# sourceMappingURL=viewdwtails.css.map */
+
+/* .progressbar-items li:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #707070;
+  width: 100%;
+  left: -50%;
+  top: 15px;
+  z-index: -1;
+}
+
+.progressbar-items li:first-child:after {
+  content: none;
+}
+
+.progressbar-items li.complete {
+  border-color: green;
+}
+
+.progressbar-items li.complete + li:after {
+  background-color: #3bb54a;
+}
+
+.progressbar-items li.complete > span {
+  content: url("/fakeassets/check.png");
+  height: 2rem;
+  background-color: #3bb54a;
+  border: none;
+}
+
+.progressbar-items li.ongoing > span {
+  content: url("/fakeassets/buffering.png");
+  height: 3rem;
+  width: 3rem;
+  background-color: #3bb54a;
+  position: sticky;
+  border: none;
+} */
+
+/* styles for 728px ipad end here */
+/* @media only screen and (max-width: 768px) {
+ 
+} */
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+@media only screen and (min-width: 64em) {
+  /* Flow 1 - 1 - styles for - order-history.html  */
+  .ord-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding-bottom: 0.625rem;
+    font-family: "Sofia Pro";
+    padding-top: 0;
+  }
+
+  .ord-cus-title {
+    font-weight: 500;
+    font-size: 1.0625rem;
+  }
+
+  .ord-rows.ord-row2 {
+    width: 45%;
+  }
+
+  ul.ord-lists {
+    margin-top: 2.1875rem;
+  }
+
+  .ord-rows.ord-row1 {
+    width: 50%;
+  }
+
+  li.ord-details {
+    padding: 1.25rem 0;
+    padding-left: 1.5625rem;
+    border-radius: 15px;
+  }
+
+  li.ord-details p {
+    margin-bottom: 0;
+    line-height: 1.5625rem;
+    font-size: 1rem;
+  }
+}
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* --- XXXXXXXXXX Nav Bar For Mobile XXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* 20em is 320px & 37.5em is 600px*/
+@media only screen and (min-width: 20em) and (max-width: 37.5em) {
+  body {
+    overflow: hidden;
+  }
+
+  /* Front Page styles for mobile */
+  .fp-form-li label {
+    font-size: 0.75rem;
+  }
+
+  .fp-form-flex {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fp-logo {
+    padding: 0px 10px;
+  }
+
+  .fp-logo img {
+    height: 12px;
+  }
+
+  .fp-form-ul {
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .fp-bg-img {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    transform: translateY(15px);
+    height: 30rem;
+  }
+
+  .fp-form-li input {
+    padding: 0.375rem 0.3125rem;
+    width: 95%;
+    font-size: 1.125rem;
+  }
+
+  button.fp-track.green-btn {
+    padding: 0.375rem 0;
+  }
+
+  li.fp-form-li a {
+    padding: 0.375rem 2.5rem;
+  }
+
+  /* styles for navigation for 320px mobile */
+  .logo img {
+    height: 0.875rem;
+    margin-top: 5px;
+    padding: 0;
+  }
+  nav {
+    background-color: white;
+    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    height: 8vh;
+  }
+
+  .nav-hr {
+    display: none;
+  }
+
+  .nav-ul li:hover > .nav-underline {
+    opacity: 0;
+  }
+
+  .body {
+    overflow-x: hidden;
+  }
+
+  .sub-nav {
+    opacity: 0;
+  }
+
+  .nav-ul {
+    position: fixed;
+    padding: 2px;
+    top: 8vh;
+    background-color: white;
+    height: 28vh;
+    right: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navlinks {
+    opacity: 0;
+    cursor: pointer;
+    width: 6rem;
+    font: normal normal bold 0.75rem/1.375rem Sofia Pro;
+    padding: 0 15px;
+    padding-top: 8px;
+    box-shadow: 0px 0px 18px #00000015;
+    margin: 1px 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    flex: 0.2;
+    cursor: pointer;
+  }
+
+  .nav-view {
+    transform: translateX(0%);
+  }
+
+  .hamburger li {
+    width: 20px;
+    margin: 3px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 2px);
+  }
+
+  /* styles for order-history.html for 320px mobile starts here */
+  .ord-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+
+  .ord-rows.ord-row2 {
+    top: 9%;
+    position: fixed;
+    flex-direction: column-reverse;
+  }
+
+  ul.ord-lists {
+    width: 95%;
+    position: absolute;
+    overflow-y: scroll;
+    margin-top: 0.9375rem;
+    top: 48%;
+    height: 47vh;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.9375rem;
+  }
+
+  .ord-rows.ord-row1,
+  .ord-rows.ord-row2 {
+    width: 100%;
+    background-color: white;
+  }
+
+  .ord-filter {
+    width: 95%;
+    background-color: white;
+    margin: auto;
+  }
+
+  .ord-title {
+    width: 100%;
+    top: 46%;
+    font-weight: 700;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.625rem;
+    font-size: 0.9375rem;
+    z-index: 1;
+  }
+
+  .ord-cus-container {
+    border-radius: 20px;
+    margin: 0.625rem;
+    margin-top: 0.9375rem;
+    padding: 0.625rem 0.625rem;
+    padding-bottom: 0px;
+    padding-top: 0.375rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  ul.ord-cus-ul li p {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 0.625rem;
+  }
+
+  li.ord-details {
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    border-radius: 25px;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.9375rem;
+    padding-right: 1.25rem;
+  }
+
+  li.ord-fil-title p {
+    display: none;
+  }
+
+  li.ord-fil-title img {
+    display: -webkit-box;
+    height: 0.9375rem;
+    margin-left: 0px;
+  }
+
+  ul.ord-filter-items {
+    padding: 0.3125rem 0;
+    justify-content: space-around;
+    padding-left: 0.3125rem;
+    padding-right: 0.625rem;
+  }
+
+  select#type {
+    width: 70px;
+  }
+
+  ul.ord-filter-items li select {
+    font-weight: 500;
+    border: none;
+  }
+
+  select#timeperiod {
+    width: 88px;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 0.625rem;
+    font-weight: 500;
+  }
+
+  li.ord-filter-by {
+    margin-left: 14px;
+  }
+
+  .ord-cus-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+  }
+
+  p.dl-email {
+    margin-bottom: 0;
+  }
+
+  ul.ord-cus-ul {
+    margin-bottom: 10px;
+  }
+
+  li.ord-details p {
+    font-size: 0.625rem;
+    margin: 0;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
+  /*order-history.html page For Mobile  */
+  /* styles for order-history.html for 320px mobile ends here */
+
+  /* Delivery Page For Mobile */
+  /*styles for --- Delivery / Return / Complaint - Page --- starts here*/
+  .dl-item1-container {
+    position: fixed;
+    top: 8vh;
+    background-color: white;
+    width: 100%;
+    z-index: 0;
+    display: block;
+  }
+
+  .dl-item-mob.item1-mob {
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    border-radius: 18px;
+    padding: 0rem 0.25rem 0rem 0.25rem;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+  }
+
+  .dl-item.item2 {
+    display: none;
+  }
+
+  .dl-item-tray.item3 {
+    overflow-y: scroll;
+    display: flex;
+    padding: 0;
+    height: 20.9375rem;
+    padding-top: 0.75rem;
+    z-index: 0;
+    flex-direction: column;
+    transform: translateY(13.75rem);
+  }
+
+  .dl-tray-col {
+    height: 195px;
+  }
+
+  .dl-item.item1 {
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    border-radius: 18px;
+    padding: 0rem 0.25rem 0rem 0.25rem;
+    width: 93vw;
+    display: none;
+  }
+
+  .dl-trayitems {
+    z-index: 0;
+    width: 90vw;
+    padding-bottom: 5px;
+    height: 10.625rem;
+    padding-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .dl-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .dl-item-ul {
+    padding-left: 0.3125rem;
+    margin-bottom: 0.9375rem;
+    margin-top: 0.75rem;
+  }
+
+  .dl-item-ul li p {
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+  }
+
+  .dl-item {
+    padding: 0rem 1.25rem 0rem 1.25rem;
+  }
+
+  .dl-item-title {
+    padding-top: 0.325rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .dl-btn-container {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    align-items: center;
+    margin-top: 0.9375rem;
+    display: flex;
+    padding: 0 0px;
+    justify-content: space-evenly;
+  }
+
+  .dl-btn-three {
+    font-size: 6.8px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    padding: 0.5rem 2px;
+    letter-spacing: 0;
+  }
+
+  .dl-tray-img {
+    border-radius: initial;
+    margin-left: 0.625rem;
+    margin-bottom: 1.5625rem;
+    width: 40%;
+  }
+
+  ul.dl-tray-flex {
+    padding-left: 7px;
+    margin-bottom: 0.3125rem;
+    margin-top: 1.875rem;
+    height: 60%;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 0.625rem;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .view-btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-35%);
+    align-items: center;
+  }
+
+  .home-btn {
+    display: none;
+  }
+
+  .view-btn button {
+    font-size: 0.625rem;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 0.3125rem -0.75rem;
+    letter-spacing: 0;
+    border-radius: 1px;
+  }
+  /* Delivery Page For Mobile */
+  /*styles for --- Delivery / Return / Complaint - Page --- ends here*/
+
+  /* viewdetails.html Page For Mobile */
+  /*styles for --- viewdetails.html & Progressbar or steps progress bar- Page --- starts here*/
+  .sh-ord-details {
+    display: none;
+  }
+
+  .sh-cus-info {
+    display: none;
+  }
+
+  .sh-col2-cta2 {
+    display: none;
+  }
+
+  .sh-btm-rgt-cta {
+    display: none;
+  }
+
+  .sh-container {
+    height: 93vh;
+    margin: 0px 10px 8px 10px;
+  }
+
+  .sh-col1 {
+    margin-top: 9vh;
+    width: 100%;
+    padding-top: 0.3125rem;
+  }
+
+  .sh-col1-X {
+    display: none;
+  }
+
+  .sh-item-details {
+    flex-direction: column;
+    height: 16.875rem;
+    justify-content: space-between;
+  }
+
+  .sh-col2 {
+    display: none;
+  }
+
+  .sh-item-img {
+    width: 14.0625rem;
+    height: 6.5625rem;
+    margin: 0;
+  }
+
+  ul.sh-item-text {
+    width: 100%;
+    padding-left: 1.25rem;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  ul.sh-item-text li {
+    line-height: 0;
+  }
+
+  li.sh-item-title {
+    font-size: 14px;
+    height: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .sh-column-container {
+    height: 100vh;
+  }
+
+  p.sh-item-title-p {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .sh-ship-date {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .sh-ship-icon {
+    height: 28px;
+    width: 28px;
+  }
+
+  .progressbar-container {
+    height: 40vh;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .sh-btm-cta-container {
+    justify-content: space-evenly;
+    padding: 0 0.625rem;
+  }
+
+  .sh-btm-lft-cta {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sh-btm-lft-cta button {
+    margin: 0;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 9px;
+    padding: 0.525rem 2px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
+
+  .sh-track-ship button {
+    padding: 0.525rem 20px;
+  }
+
+  /* Vertical Progress bar -- styles for mobile */
+  ul.steps {
+    transform: rotate(90deg);
+    width: 60%;
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 0;
+    z-index: 0;
+    margin-top: 80px;
+  }
+
+  .step__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .step__label {
+    transform: rotate(-90deg);
+    width: 120px;
+    top: -220px;
+    left: 80px;
+    font-size: 0.625rem;
+    font-weight: 300;
+  }
+
+  .step--complete .step__icon {
+    content: url("/assets/images/icons8-double-tick-64.png");
+    padding: 3px;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .step__icon:before {
+    height: 4px;
+    width: 4px;
+  }
+
+  .hide-for-desktop {
+    display: block;
+  }
+
+  .customer-order-details button {
+    font-size: 0.5625rem;
+    padding: 0.525rem 0.625rem;
+    z-index: 2;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .customer-order-details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  /*Mobile Styles for pop-up after clicking .customer-order-details button starts here */
+  .pop-up-bg-mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+  }
+
+  .sh-col1 {
+    z-index: 0;
+  }
+
+  .sh-col2 {
+    display: none;
+    position: absolute;
+    width: 90%;
+    padding: 2px 6px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    margin: 0 auto;
+    top: 15%;
+    border-radius: 15px;
+  }
+
+  .sh-col2-X img {
+    height: 24px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col2-X.hide-for-desktop {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .sh-ord-details {
+    display: none;
+  }
+
+  .sh-cus-info {
+    display: none;
+    margin-bottom: 0.5rem;
+    margin-top: 0.9375rem;
+  }
+
+  .sh-col2-cta2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+  }
+
+  .sh-btm-cta-container {
+    z-index: -1;
+  }
+
+  .sh-dl-btn-three {
+    margin-bottom: 0;
+    padding: 0.625rem 0.8125rem;
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+
+  .sh-col2-cta1 {
+    display: none;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.125rem;
+  }
+
+  .sh-ord-details {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .sh-ord-title {
+    font-size: 0.875rem;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 0.625rem;
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 15px;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 0.625rem;
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 16px;
+  }
+
+  .sh-cus-title {
+    font-size: 14px;
+  }
+  /* Mobile Styles for pop-up after clicking .customer-order-details button starts here */
+
+  /* viewdetails.html Page For Mobile */
+  /*styles for --- viewdetails.html & Progressbar or steps progress bar- Page --- Ends here*/
+}
