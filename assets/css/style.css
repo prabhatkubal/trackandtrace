@@ -672,7 +672,7 @@ li.ord-details p {
 }
 
 .sh-item-img {
-  background: transparent url("/assets/images/asset-1.png") 0% 0% no-repeat
+  background: transparent url("assets/images/asset-1.png") 0% 0% no-repeat
     padding-box;
   border: 1px solid rgb(179 179 179);
   border-radius: 10px;
