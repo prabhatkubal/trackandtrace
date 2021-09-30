@@ -571,21 +571,21 @@ li.ord-details p {
 }
 
 .dl-tray-img-1 {
-  background: transparent url("/assets/images/1.png") 0% 0% no-repeat
+  background: transparent url("./assets/images/1.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
 }
 
 .dl-tray-img-2 {
-  background: transparent url("/assets/images/2.png") 0% 0% no-repeat
+  background: transparent url("./assets/images/2.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
 }
 
 .dl-tray-img-3 {
-  background: transparent url("/assets/images/3.png") 0% 0% no-repeat
+  background: transparent url("./assets/images/3.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
