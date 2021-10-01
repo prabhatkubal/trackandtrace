@@ -79,7 +79,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("/assets/images/5510740@2x.png");
+  background-image: url("../images/5510740@2x.png");
   height: 34rem;
 }
 
@@ -571,21 +571,21 @@ li.ord-details p {
 }
 
 .dl-tray-img-1 {
-  background: transparent url("/assets/images/1.png") 0% 0% no-repeat
+  background: transparent url("../images/1.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
 }
 
 .dl-tray-img-2 {
-  background: transparent url("/assets/images/2.png") 0% 0% no-repeat
+  background: transparent url("../images/2.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
 }
 
 .dl-tray-img-3 {
-  background: transparent url("/assets/images/3.png") 0% 0% no-repeat
+  background: transparent url("../images/3.png") 0% 0% no-repeat
     padding-box;
     background-position: center;
     background-size: contain;
@@ -672,7 +672,7 @@ li.ord-details p {
 }
 
 .sh-item-img {
-  background: transparent url("/assets/images/asset-1.png") 0% 0% no-repeat
+  background: transparent url("../images/asset-1.png") 0% 0% no-repeat
     padding-box;
   border: 1px solid rgb(179 179 179);
   border-radius: 10px;
