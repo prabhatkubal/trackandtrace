@@ -718,7 +718,7 @@ p.sh-item-text-li-p {
 }
 
 .sh-ship-icon {
-  background: transparent url("/assets/images/delivery-truck.png") 0% 0% no-repeat
+  background: transparent url("../images/delivery-truck.png") 0% 0% no-repeat
     padding-box;
   background-position: center;
   background-size: cover;
