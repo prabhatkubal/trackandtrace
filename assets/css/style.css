@@ -340,12 +340,11 @@ ul.ord-lists {
 
 ul.ord-lists::-webkit-scrollbar {
   width: 5px;
-  height: 8px;
   background-color: rgb(255, 255, 255);
 }
 
 ul.ord-lists::-webkit-scrollbar-button {
-  height: 20px;
+  height: 8px;
 }
 
 ul.ord-lists::-webkit-scrollbar-track {
@@ -1436,13 +1435,125 @@ ul.sh-cus-ul {
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1400px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Desktop sizes 1400px starts - Here 1400px === 87.5em  */
 @media only screen and (min-width: 87.5em) {
-  /* Styles for index.html min-width: 1024px stars here*/
-  /* Styles for index.html min-width: 1024px ends here*/
+  /* Styles for index.html min-width: 1400px stars here*/
+  .fp-form-li label {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .fp-form-li input {
+    font-size: 1.5625rem;
+    padding: 1.125rem;
+    width: 90%;
+  }
+
+  .fp-form-ul {
+    width: 30%;
+    justify-content: space-evenly;
+    height: 60%;
+    position: fixed;
+    top: 15%;
+    padding-left: 3.125rem;
+  }
+
+  .fp-form-li {
+    width: 100%;
+  }
+
+  .fp-bg-img {
+    height: 40rem;
+    z-index: -1;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    transform: translate(35%, -8%);
+  }
+
+  .fp-logo {
+    padding: 0.625rem 4.735rem;
+  }
+
+  .fp-logo img {
+    height: 25px;
+  }
+
+  .fp-track {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    width: 70px;
+    padding: 0.9375rem 3.125rem;
+  }
+  /* Styles for index.html min-width: 1400px ends here*/
 
   /* ----------------------------------------------------------------------------------------------------------------- */
 
-  /* Styles for order-history.html min-width: 1024px starts here*/
-  /* Styles for order-history.html min-width: 1024px ends here*/  
+  /* Styles for order-history.html min-width: 1400px starts here*/
+  .nav-ul a {
+    font-size: 1.25rem;
+  }
+
+  .ord-title {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  ul.ord-lists {
+    margin-top: 50px;
+    height: 80vh;
+  }
+
+  .ord-container {
+    padding: 1.3rem 2rem;
+  }
+
+  li.ord-details {
+    padding: 1.5625rem 0;
+    padding-left: 1.5625rem;
+  }
+
+  li.ord-details p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+  }
+
+  ul.ord-cus-ul li p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .ord-cus-container {
+    padding: 20px 20px;
+    padding-bottom: 0;
+    border-radius: 15px;
+  }
+
+  .ord-cus-title {
+    font-size: 1.5rem;
+  }
+
+  ul.ord-filter-items li p {
+    font-size: 18px;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 18px;
+  }
+
+  ul.ord-filter-items li select {
+    padding: 10px 5px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 8rem;
+  }
+
+  ul.ord-filter-items {
+    height: 7vh;
+  }
+  /* Styles for order-history.html min-width: 1400px ends here*/
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
