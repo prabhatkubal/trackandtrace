@@ -512,12 +512,12 @@ li.ord-details p {
 }
 
 .item3 {
-  grid-column: 1 / span 4;
-  grid-row: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 3; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: start; */
+  /* align-items: center; */
 }
 
 .dl-item-tray {
@@ -527,7 +527,6 @@ li.ord-details p {
   border-radius: 5px;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 14.125rem;
   padding: 0.5rem 1.025rem 0.5rem 0.5rem;
   align-items: center;
   scrollbar-width: thin;
@@ -1554,12 +1553,6 @@ ul.sh-cus-ul {
     height: 7vh;
   }
   /* Styles for order-history.html min-width: 1400px ends here*/
-
-  /* ----------------------------------------------------------------------------------------------------------------- */
-
-  /* Styles for delivery.html min-width: 1400px starts here*/
-  
-  /* Styles for delivery.html min-width: 1400px ends here*/  
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
@@ -1863,12 +1856,11 @@ ul.sh-cus-ul {
   /* Delivery Page For Mobile */
   /*styles for --- Delivery / Return / Complaint - Page --- starts here*/
   .dl-item1-container {
-    position: fixed;
-    top: 8vh;
     background-color: white;
     width: 100%;
     z-index: 0;
     display: block;
+    height: 30vh;
   }
 
   .dl-item-mob.item1-mob {
@@ -1876,8 +1868,9 @@ ul.sh-cus-ul {
     border-radius: 18px;
     padding: 0rem 0.25rem 0rem 0.25rem;
     width: 90vw;
-    margin: 0 auto;
-    margin-top: 0.75rem;
+    margin: auto;
+    /* height: 100%; */
+    margin-top: 4.5rem;
   }
 
   .dl-item.item2 {
@@ -1885,14 +1878,7 @@ ul.sh-cus-ul {
   }
 
   .dl-item-tray.item3 {
-    overflow-y: scroll;
-    display: flex;
-    padding: 0;
-    height: 20.9375rem;
-    padding-top: 0.75rem;
-    z-index: 0;
-    flex-direction: column;
-    transform: translateY(13.75rem);
+    height: 70vh;
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1934,6 +1920,7 @@ ul.sh-cus-ul {
     height: 100vh;
     overflow: hidden;
     padding: 0;
+    justify-content: space-between;
   }
 
   .dl-item-ul {
