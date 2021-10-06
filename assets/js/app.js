@@ -15,7 +15,7 @@ const navAnimation = () => {
             if(item.style.animation) {
                 item.style.animation = ''
             } else {
-                item.style.animation = `navFade 0.5s ease forwards ${index / 8 + 0.8}s`
+                item.style.animation = `navFade 0.5s ease forwards ${index / 9 + 0.45}s`
             }
         });
 

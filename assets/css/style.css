@@ -112,7 +112,7 @@ body {
 .fp-form-li input {
   padding: 0.625rem;
   border-radius: 2px;
-  border: 1px solid #545454;
+  border: 1px solid #979797;
   font-size: 1.5625rem;
   width: 100%;
   background-color: #f3f3f3;
@@ -368,7 +368,7 @@ ul.ord-lists::-webkit-scrollbar-thumb {
 }
 
 .ord-cus-container {
-  box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+  box-shadow: rgb(143 143 143 / 20%) 2px 3px 17px 2px;
   padding: 0.9375rem 0.8125rem;
   background-color: white;
   border-radius: 5px;
@@ -1221,11 +1221,11 @@ ul.sh-cus-ul {
 
   .item3 {
     grid-column: 1 / span 6;
-    grid-row: 3; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: start; 
-    align-items: center; 
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   /* .item3 {
@@ -1575,7 +1575,7 @@ ul.sh-cus-ul {
     overflow: hidden;
   }
 
-  /* Front Page styles for mobile */
+  /* Index Page styles for mobile */
   .fp-form-li label {
     font-size: 0.75rem;
   }
@@ -1617,11 +1617,12 @@ ul.sh-cus-ul {
     padding: 0.375rem 0.3125rem;
     width: 95%;
     font-size: 1.125rem;
+    border-radius: 4px;
   }
 
   button.fp-track.green-btn {
     padding: 0.375rem 1.5625rem;
-    border-radius: 1px;
+    border-radius: 3px;
   }
 
   li.fp-form-li a {
@@ -1726,9 +1727,8 @@ ul.sh-cus-ul {
   ul.ord-lists {
     overflow-y: scroll;
     margin-top: 0;
-    top: 48%;
     width: 95%;
-    height: 48vh;
+    height: 44vh;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     padding-bottom: 0.9375rem;
@@ -1757,7 +1757,7 @@ ul.sh-cus-ul {
   .ord-rows.ord-row2 {
     height: 40vh;
     width: 100%;
-    top: 8%;
+    top: 10%;
     position: fixed;
     background-color: white;
   }
@@ -1771,7 +1771,7 @@ ul.sh-cus-ul {
   .ord-title {
     width: 100%;
     font-weight: 700;
-    padding-bottom: 0.3125rem;
+    padding-bottom: 0;
     padding-top: 0.625rem;
     position: initial;
     font-size: 0.9375rem;
@@ -1795,7 +1795,7 @@ ul.sh-cus-ul {
   }
 
   li.ord-details {
-    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
     border-radius: 25px;
     padding: 0.625rem 0.625rem;
     border-radius: 0.9375rem;
@@ -1817,6 +1817,9 @@ ul.sh-cus-ul {
     padding: 0.3125rem 0;
     justify-content: space-around;
     padding-left: 0.3125rem;
+    border: none;
+    box-shadow: inset 0px 0px 40px 40px #bbcf3d;
+    border-radius: 0;
     padding-right: 0.625rem;
   }
 
@@ -1871,7 +1874,8 @@ ul.sh-cus-ul {
     width: 100%;
     z-index: 0;
     display: block;
-    height: 30vh;
+    padding-bottom: 15px;
+    height: 40vh;
   }
 
   .dl-item-mob.item1-mob {
@@ -1880,7 +1884,6 @@ ul.sh-cus-ul {
     padding: 0rem 0.25rem 0rem 0.25rem;
     width: 90vw;
     margin: auto;
-    /* height: 100%; */
     margin-top: 4.5rem;
   }
 
@@ -1889,7 +1892,8 @@ ul.sh-cus-ul {
   }
 
   .dl-item-tray.item3 {
-    height: 70vh;
+    height: 85vh;
+    padding: 0.5rem 0;
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1920,6 +1924,7 @@ ul.sh-cus-ul {
     width: 90vw;
     padding-bottom: 5px;
     height: 10.625rem;
+    margin: auto;
     padding-top: 0;
     margin-bottom: 1.25rem;
   }
@@ -1927,9 +1932,9 @@ ul.sh-cus-ul {
   .dl-container {
     display: flex;
     flex-direction: column;
-    padding-top: 0;
     height: 100vh;
     overflow: hidden;
+    grid-gap: 0;
     padding: 0;
     justify-content: space-between;
   }
@@ -2250,6 +2255,7 @@ ul.sh-cus-ul {
   .sh-cus-info {
     display: none;
     margin-bottom: 0.5rem;
+    box-shadow: rgb(163 163 163 / 20%) 0px 0px 8px 2px;
     margin-top: 0.9375rem;
   }
 
@@ -2281,6 +2287,7 @@ ul.sh-cus-ul {
 
   .sh-ord-details {
     margin: 0;
+    box-shadow: rgb(163 163 163 / 20%) 0px 0px 8px 2px;
     margin-top: 10px;
   }
 
@@ -2313,7 +2320,255 @@ ul.sh-cus-ul {
 /* Mobile sizes 320px starts - ends 320px === 20em  */
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
-/* Desktop sizes 360px starts - Here 360px === 22.5em  */
-/* @media only screen and (max-width: 22.5em) {
+/* Desktop sizes 370px starts - Here 370px === 23.125rem  */
+@media only screen and (min-width: 23.125rem) {
+  .nav-ul {
+    height: fit-content;
+    width: fit-content;
+  }
+  /*styles for Index.html Page mobile min-width 370px starts here*/
+  .fp-form-li {
+    width: 90%;
+  }
 
-} */
+  li.fp-form-li-btn {
+    align-items: center;
+  }
+
+  li.fp-form-li a {
+    padding: 0;
+  }
+
+  .fp-form-li label {
+    font-size: 0.9375rem;
+  }
+
+  .fp-track {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  button.fp-track.green-btn {
+    padding: 0.35rem 2.5rem;
+  }
+
+  .fp-form-li input {
+    padding: 12px 10px;
+  }
+
+  .fp-bg-img {
+    width: 100%;
+    height: 22.5rem;
+  }
+
+  .fp-logo img {
+    height: 18px;
+  }
+
+  .fp-logo {
+    padding: 0 1rem;
+  }
+  /*styles for Index.html Page mobile min-width 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for order-history.html min-width: 370px starts here*/
+
+  .ord-rows.ord-row2 {
+    height: 32vh;
+    top: 8%;
+  }
+
+  .ord-rows.ord-row1 {
+    height: auto;
+    top: 40%;
+  }
+
+  ul.ord-lists {
+    height: 60vh;
+  }
+
+  ul.ord-cus-ul li p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  li.ord-details p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  /* Styles for order-history.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for delivery.html min-width: 370px starts here*/
+  .dl-item1-container {
+    height: 35vh;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+  }
+
+  .dl-item-ul li p {
+    font-size: 12px;
+  }
+
+  .dl-item-title {
+    font-size: 1rem;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 12px;
+    line-height: 26px;
+  }
+
+  .dl-trayitems {
+    height: 210px;
+  }
+
+  .dl-tray-col {
+    height: 230px;
+  }
+
+  .dl-tray-img {
+    height: 12rem;
+    width: 45%;
+  }
+
+  ul.dl-tray-flex {
+    margin-top: 2.2rem;
+  }
+
+  .view-btn button {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .view-btn {
+    height: 5vh;
+  }
+  /* Styles for delivery.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for viewdetails.html min-width: 370px starts here*/
+  .sh-item-img {
+    height: 9.375rem;
+    width: 16.875rem;
+  }
+
+  p.sh-item-title-p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 14px;
+  }
+
+  ul.sh-item-text {
+  }
+
+  .sh-item-details {
+    height: 21.25rem;
+  }
+
+  .sh-ship-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .sh-ship-date {
+    height: 8vh;
+  }
+
+  ul.steps {
+    width: 80%;
+    margin-top: 115px;
+    margin-left: -30px;
+  }
+
+  .progressbar-container {
+    height: 44%;
+  }
+
+  .step__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .step__icon:before {
+    height: 6px;
+    width: 6px;
+  }
+
+  .step__label {
+    font-size: 14px;
+    top: -235px;
+    left: 95px;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 11px;
+  }
+
+  .customer-order-details button {
+    font-size: 11px;
+  }
+
+  .customer-order-details {
+    margin-bottom: 10px;
+  }
+
+  .sh-btm-cta-container {
+    margin-top: 20px;
+  }
+  /* Styles for viewdetails.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for Pop-up on viewdetails.html min-width: 370px starts here*/
+  .sh-dl-btn-three {
+    font-size: 11px;
+  }
+
+  .sh-ord-title {
+    font-size: 1.125rem;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 0.875rem;
+    margin: 30px 10px;
+    line-height: 22px;
+  }
+
+  .sh-cus-title {
+    font-size: 1.125rem;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 0.875rem;
+    margin: 30px 5px;
+    line-height: 25px;
+  }
+
+  .sh-cus-info {
+    margin-top: 1.125rem;
+  }
+
+  .sh-col2-X img {
+    padding: 2px 9px;
+    height: 30px;
+  }
+
+  .sh-col2-X.hide-for-desktop {
+    top: -35px;
+  }
+  /* Styles for Pop-up on viewdetails.html min-width: 370px ends here*/
+}
