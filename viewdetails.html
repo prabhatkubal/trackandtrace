@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/mc-calendar.min.css" /> -->
     <title>view details</title>
   </head>
 
   <body>
-    <div class="pop-up-bg-mask"></div>
+    <div class="pop-up-bg-mask pop-up-bg-mask2"></div>
     <nav class="nav">
       <div class="logo">
         <a href="index.html">
-          <img src="assets/images/Home_Centre.png" alt="logo">
+          <img src="assets/images/Home_Centre.png" alt="logo" />
         </a>
       </div>
       <ul class="nav-ul">
@@ -51,10 +52,12 @@
       <div class="sh-container">
         <div class="sh-col1">
           <div class="sh-col1-X">
-            <img src="./assets/images/icons8-macos-close-90.png" alt="">
+            <img src="assets/images/icons8-macos-close-90.png" alt="" />
           </div>
           <div class="sh-item-details">
-            <div class="sh-item-img"></div>
+            <div class="sh-item-img">
+              <img src="assets/images/vd-desktop.png" alt="" />
+            </div>
             <ul class="sh-item-text">
               <li class="sh-item-title">
                 <p class="sh-item-title-p">Item details</p>
@@ -69,7 +72,9 @@
                 <p class="sh-item-text-li-p sh-status">Status:</p>
               </li>
               <li>
-                <p class="sh-item-text-li-p sh-shipping-status">Shipping status:</p>
+                <p class="sh-item-text-li-p sh-shipping-status">
+                  Shipping status:
+                </p>
               </li>
             </ul>
           </div>
@@ -103,7 +108,7 @@
                 <span class="step__icon"></span>
                 <span class="step__label">Fitment Complete</span>
               </li>
-            </ul>            
+            </ul>
           </div>
           <div class="customer-order-details hide-for-desktop">
             <button class="cta-btn">CUSTOMER/ORDER DETAILS</button>
@@ -111,13 +116,29 @@
         </div>
         <div class="sh-col2">
           <div class="sh-col2-X hide-for-desktop">
-            <img src="./assets/images/X.png" alt="">
+            <img src="./assets/images/X.png" alt="" />
           </div>
           <div class="sh-col2-cta1">
-            <button class="sh-btn-45 dl-chng-date sh-dl-btn-three dl-btn-three cta-btn">
+            <button
+              class="
+                sh-btn-45
+                dl-chng-date
+                sh-dl-btn-three
+                dl-btn-three
+                cta-btn
+              "
+            >
               CHANGE DELIVERY DATE
             </button>
-            <button class="sh-btn-45 dl-req-asmbly sh-dl-btn-three dl-btn-three cta-btn">
+            <button
+              class="
+                sh-btn-45
+                dl-req-asmbly
+                sh-dl-btn-three
+                dl-btn-three
+                cta-btn
+              "
+            >
               REQUEST FOR ASSEMBLY
             </button>
           </div>
@@ -133,7 +154,9 @@
                 <p class="sh-ord-pla">Order Placed:</p>
               </li>
               <li>
-                <p class="sh-ord-pla hide-for-desktop">Tentative delivery date:</p>
+                <p class="sh-ord-pla hide-for-desktop">
+                  Tentative delivery date:
+                </p>
               </li>
               <li>
                 <p class="sh-ord-del">Order Delivery status:</p>
@@ -168,6 +191,12 @@
             </button>
           </div>
         </div>
+        <div class="custom-date-picker dt">
+          <div class="sh-col3-X hide-for-desktop">
+            <img src="./assets/images/X.png" alt="" />
+          </div>
+          <date-picker format="MMMM DD (DDD), YYYY"></date-picker>
+        </div>
       </div>
       <div class="sh-btm-cta-container">
         <div class="sh-btm-lft-cta">
@@ -184,16 +213,21 @@
         </div>
         <div class="sh-btm-rgt-cta">
           <div class="sh-track-home">
-            <button class="cta-btn sh-btm-cta sh-btm-cta3">
-              BACK TO HOME
-            </button>
+            <button class="cta-btn sh-btm-cta sh-btm-cta3">BACK TO HOME</button>
           </div>
         </div>
       </div>
     </div>
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="assets/js/progressbar.js"></script>
-    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/new.js"></script>
+    <!-- <script src="assets/js/mc-calendar.min.js"></script>
+    <script>
+      const myDatePicker = MCDatepicker.create({
+        el: "#datepicker",
+        bodyType: "inline",
+      });
+    </script> -->
   </body>
 </html>

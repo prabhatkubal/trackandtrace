@@ -567,6 +567,7 @@ li.ord-details p {
 
 .dl-tray-img {
   /* border: 1px solid rgb(179 179 179); */
+  position: relative;
   border-radius: initial;
   opacity: 1;
   height: 11.5rem;
@@ -574,7 +575,15 @@ li.ord-details p {
   margin-left: 3.4375rem;
 }
 
-.dl-tray-img-1 {
+.dl-tray-img img {
+  /* height: 8.4375rem; */
+  position: absolute;
+  height: auto;
+  top: 15%;
+  width: 100%;
+}
+
+/* .dl-tray-img-1 {
   background: transparent url("../images/1.png") 0% 0% no-repeat padding-box;
   background-position: center;
   background-size: contain;
@@ -590,7 +599,7 @@ li.ord-details p {
   background: transparent url("../images/3.png") 0% 0% no-repeat padding-box;
   background-position: center;
   background-size: contain;
-}
+} */
 
 .dl-tray-flex {
   height: 75%;
@@ -673,8 +682,9 @@ li.ord-details p {
 }
 
 .sh-item-img {
-  background: transparent url(../images/vd-desktop.png) 0% 0% no-repeat
-    padding-box;
+  position: relative;
+  /* background: transparent url(../images/vd-desktop.png) 0% 0% no-repeat
+    padding-box; */
   border: 1px solid rgb(179 179 179);
   border-radius: 1rem;
   background-position: center;
@@ -684,6 +694,12 @@ li.ord-details p {
   width: 15.5rem;
   margin-top: 2.1875rem;
   margin-left: 1.25rem;
+}
+
+.sh-item-img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .sh-item-details {
@@ -1237,7 +1253,7 @@ ul.sh-cus-ul {
     width: 95%;
   }
 
-  .dl-tray-img-1 {
+  /* .dl-tray-img-1 {
     background: transparent url("../images/1-desktop.png") 0% 0% no-repeat
       padding-box;
     background-position: center;
@@ -1256,7 +1272,7 @@ ul.sh-cus-ul {
       padding-box;
     background-position: center;
     background-size: contain;
-  }
+  } */
 
   .dl-btn-three {
     font-size: 12px;
@@ -1314,13 +1330,6 @@ ul.sh-cus-ul {
 
   /* Styles for viewdetails.html min-width: 1024px starts here*/
   .sh-item-img {
-    background: transparent url(../images/vd-desktop.png) 0% 0% no-repeat
-      padding-box;
-    background-position: center;
-    background-size: contain;
-    border: 1px solid rgb(78 78 78);
-    background-repeat: no-repeat;
-    border-radius: 1rem;
     width: 15.625rem;
     margin-top: 0;
     height: 10.6875rem;
@@ -2211,7 +2220,9 @@ ul.sh-cus-ul {
   /*Mobile Styles for pop-up after clicking .customer-order-details button starts here */
   .pop-up-bg-mask {
     position: absolute;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
+    background-color: black;
+    opacity: 0.3;
     width: 100%;
     height: 100vh;
     z-index: 1;
@@ -2242,7 +2253,7 @@ ul.sh-cus-ul {
     background-color: #bbcf3d;
   }
 
-  .sh-col2-X.hide-for-desktop {
+  .sh-col2-X {
     position: absolute;
     top: -28px;
     right: 0;
@@ -2316,12 +2327,40 @@ ul.sh-cus-ul {
 
   /* viewdetails.html Page For Mobile */
   /*styles for --- viewdetails.html & Progressbar or steps progress bar- Page --- Ends here*/
+
+  /* Styles for date-picker on viewdetails.html min-width: 320px starts here*/
+
+  .sh-col3-X img {
+    height: 22px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col3-X {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .custom-date-picker {
+    position: fixed;
+    height: 85vh;
+    border: 1px solid grey;
+    width: 95%;
+    margin: auto;
+    top: 14%;
+    display: none;
+    background-color: white;
+    z-index: 2;
+  }
+  /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/  
 }
 /* Mobile sizes 320px starts - ends 320px === 20em  */
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
-/* Desktop sizes 370px starts - Here 370px === 23.125rem  */
-@media only screen and (min-width: 23.125rem) {
+/* Mobile sizes 370px starts - Here 370px === 23.125rem  */
+@media only screen and (min-width: 23.125rem) and (max-width: 47.5rem) {
   .nav-ul {
     height: fit-content;
     width: fit-content;
@@ -2441,7 +2480,7 @@ ul.sh-cus-ul {
   }
 
   .view-btn button {
-    padding: 8px 20px;
+    padding: 6px 20px;
     font-size: 12px;
   }
 
@@ -2527,7 +2566,7 @@ ul.sh-cus-ul {
   }
 
   .sh-btm-cta-container {
-    margin-top: 20px;
+    margin-top: 18px;
   }
   /* Styles for viewdetails.html min-width: 370px ends here*/
 
@@ -2554,12 +2593,12 @@ ul.sh-cus-ul {
 
   ul.sh-cus-ul {
     font-size: 0.875rem;
-    margin: 30px 5px;
+    margin: 35px 5px;
     line-height: 25px;
   }
 
   .sh-cus-info {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
   }
 
   .sh-col2-X img {
@@ -2570,5 +2609,45 @@ ul.sh-cus-ul {
   .sh-col2-X.hide-for-desktop {
     top: -35px;
   }
+
+  .sh-col2-cta2 {
+    height: 6vh;
+    margin-top: 10px;
+  }
+
+  .sh-col2-cta1 {
+    height: 9vh;
+  }
   /* Styles for Pop-up on viewdetails.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for date-picker on viewdetails.html min-width: 370px ends here*/
+  .sh-col3-X img {
+    height: 24px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col3-X {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .custom-date-picker {
+    position: absolute;
+    height: 85vh;
+    border: 1px solid grey;
+    width: 95%;
+    margin: auto;
+    top: 14%;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
