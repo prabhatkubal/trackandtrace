@@ -49,12 +49,11 @@ $('.dt-year').html(today.getFullYear());
 
 $('.dl-chng-date').on('click', function () {
   $('.custom-date-picker').css("display","flex");
-  $('.sh-col2').css("display", "none");
   $('.pop-up-bg-mask').css("opacity", 0.6);
+  $('.sh-col3-X').removeClass('hide-for-desktop');
 })
 
 $('.sh-col3-X').on('click', function () {
   $('.custom-date-picker').css("display", "none");
-  $('.sh-col2').css("display", "block");
   $('.pop-up-bg-mask').css("opacity", 0.3);
 });

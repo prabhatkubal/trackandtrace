@@ -1078,6 +1078,36 @@ ul.sh-cus-ul {
  
 } */
 
+/* Styles for date-picker  */
+  /* Styles for date-picker on viewdetails.html min-width: 370px ends here*/
+  .sh-col3-X img {
+    height: 24px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col3-X {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .custom-date-picker {
+    position: absolute;
+    height: 85vh;
+    border: 1px solid grey;
+    width: 95%;
+    margin: auto;
+    top: 14%;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1024px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Desktop sizes 1024px starts - Here 1024px === 64em  */
 @media only screen and (min-width: 64em) {
@@ -1575,6 +1605,12 @@ ul.sh-cus-ul {
   /* Styles for order-history.html min-width: 1400px ends here*/
 }
 
+@media only screen and (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* --- XXXXXXXXXX Nav Bar For Mobile XXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 320px starts - Here 320px === 20em  */
@@ -1737,7 +1773,7 @@ ul.sh-cus-ul {
     overflow-y: scroll;
     margin-top: 0;
     width: 95%;
-    height: 44vh;
+    height: 47vh;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     padding-bottom: 0.9375rem;
@@ -1760,11 +1796,11 @@ ul.sh-cus-ul {
     margin-right: 0;
     align-items: center;
     position: fixed;
-    top: 48%;
+    top: 45%;
   }
 
   .ord-rows.ord-row2 {
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     top: 10%;
     position: fixed;
@@ -1774,14 +1810,14 @@ ul.sh-cus-ul {
   .ord-filter {
     width: 95%;
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .ord-title {
     width: 100%;
     font-weight: 700;
     padding-bottom: 0;
-    padding-top: 0.625rem;
+    padding-top: 0.9375rem;
     position: initial;
     font-size: 0.9375rem;
     z-index: 1;
@@ -1790,11 +1826,11 @@ ul.sh-cus-ul {
   .ord-cus-container {
     border-radius: 20px;
     margin: 0.625rem;
-    margin-top: 0.9375rem;
+    margin-top: 12px;
     padding: 0.625rem 0.625rem;
     padding-bottom: 0px;
     padding-top: 0.375rem;
-    margin-bottom: 1.5625rem;
+    margin-bottom: 0px;
   }
 
   ul.ord-cus-ul li p {
@@ -2350,15 +2386,198 @@ ul.sh-cus-ul {
     width: 95%;
     margin: auto;
     top: 14%;
+    justify-content: center;
+    align-items: flex-start;
     display: none;
     background-color: white;
     z-index: 2;
   }
-  /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/  
+  /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/
 }
 /* Mobile sizes 320px starts - ends 320px === 20em  */
 
-/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 360px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* styles for Mobile sizes 360px starts - Here 360px === 22.5rem  */
+@media only screen and (min-width: 22.5rem) and (max-width: 23.0625rem) {
+  .nav-view {
+    height: fit-content;
+    width: fit-content;
+    background-color: #fbfbfb;
+    padding: 5px;
+    transform: translateX(-6%);
+    box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
+  }
+  /* styles for order-history.html mobile min-width: 360px starts here */
+  .ord-rows.ord-row2 {
+    height: 31%;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  ul.ord-cus-ul li p {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  .ord-rows.ord-row1 {
+    top: 42%;
+  }
+
+  li.ord-details p {
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  ul.ord-lists {
+    height: 50vh;
+  }
+  /* styles for order-history.html mobile min-width: 360px starts here */
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for delivery.html min-width: 360px starts here*/
+  .dl-item-mob.item1-mob {
+    margin-top: 58px;
+  }
+
+  .dl-item-ul li p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+    padding: 0.5rem 1px;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .dl-tray-img img {
+    width: 95%;
+    top: 21%;
+    left: 2%;
+  }
+  /* Styles for delivery.html min-width: 360px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for viewdetails.html min-width: 360px starts here*/
+
+  /* .sh-item-img {
+    background: transparent url(../images/vd-mobile.png) 0% 0% no-repeat
+      padding-box;
+    margin: 0;
+    height: 100%;
+    background-position: center;
+    width: 15.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+
+  .sh-item-img {
+    width: 16.0625rem;
+    height: 8.5625rem;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .sh-item-details {
+    height: 21.875rem;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .sh-ship-icon {
+    height: 33px;
+    width: 33px;
+  }
+
+  .sh-ship-date {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  ul.steps {
+    margin-top: 85px;
+    margin-left: 15px;
+  }
+
+  span.step__label {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .customer-order-details button {
+    font-size: 10px;
+  }
+
+  .sh-track-ship button {
+    font-size: 10px;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 10px;
+  }
+
+  .sh-container {
+    margin-bottom: 10px;
+  }
+  /* Styles for viewdetails.html min-width: 360px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for pop-up on  viewdetails.html min-width: 360px starts here*/  
+  .sh-dl-btn-three {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 13px;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 13px;
+  }
+
+  .sh-cus-title {
+    font-size: 16px;
+  }
+
+  .sh-ord-title {
+    font-size: 16px;
+  }
+
+  .sh-col2 {
+    top: 18%;
+  }
+
+  .sh-cus-info {
+    margin-top: 1rem;
+  }
+
+  .sh-ord-details {
+    margin-top: 12px;
+  }
+}
+/* styles for Mobile sizes 360px ends - Here*/
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 370px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 370px starts - Here 370px === 23.125rem  */
 @media only screen and (min-width: 23.125rem) and (max-width: 47.5rem) {
   .nav-ul {
@@ -2606,7 +2825,7 @@ ul.sh-cus-ul {
     height: 30px;
   }
 
-  .sh-col2-X.hide-for-desktop {
+  .sh-col2-X {
     top: -35px;
   }
 
