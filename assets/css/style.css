@@ -5,7 +5,7 @@
   --white: #ffffff;
   --unnamed-color-bbcf3d: #bbcf3d;
   --progline-color-grey: #707070;
-  --progline-color-green: #bbcf3d;
+  --progline-color-green: aliceblue;
 }
 
 html {
@@ -48,10 +48,6 @@ body {
 
 .cta-btn:hover {
   background-color: #cddb75;
-}
-
-.hide-for-desktop {
-  display: none;
 }
 
 /* Front - Page for Invoice & Mobile Number */
@@ -1079,41 +1075,44 @@ ul.sh-cus-ul {
 } */
 
 /* Styles for date-picker  */
-  /* Styles for date-picker on viewdetails.html min-width: 370px ends here*/
-  .sh-col3-X img {
-    height: 24px;
-    padding: 2px 8px;
-    border-radius: 100%;
-    background-color: #bbcf3d;
-  }
+.sh-col3-X img {
+  height: 24px;
+  padding: 2px 8px;
+  border-radius: 100%;
+  background-color: #bbcf3d;
+}
 
-  .sh-col3-X {
-    position: absolute;
-    top: -28px;
-    right: 0;
-  }
+.sh-col3-X {
+  position: absolute;
+  top: -28px;
+  right: 0;
+}
 
-  .custom-date-picker {
-    position: absolute;
-    height: 85vh;
-    border: 1px solid grey;
-    width: 95%;
-    margin: auto;
-    top: 14%;
-    display: none;
-    background-color: white;
-    z-index: 2;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-  }
+.custom-date-picker {
+  position: absolute;
+  height: 85vh;
+  border: 1px solid grey;
+  width: 95%;
+  margin: auto;
+  top: 14%;
+  display: none;
+  background-color: white;
+  z-index: 2;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1024px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Desktop sizes 1024px starts - Here 1024px === 64em  */
 @media only screen and (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+
   .logo img {
     padding-left: 1.875rem;
-    height: 1rem;
+    height: 1.125rem;
   }
 
   nav {
@@ -1141,8 +1140,9 @@ ul.sh-cus-ul {
   .fp-form-ul {
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 100px;
     width: fit-content;
-    margin: auto;
     height: 50%;
     padding: 0;
     align-items: center;
@@ -1274,6 +1274,22 @@ ul.sh-cus-ul {
     align-items: center;
   }
 
+  .dl-tray-img {
+    width: 20.5rem;
+    height: 11.25rem;
+  }
+
+  .dl-tray-img img {
+    top: 0%;
+    height: auto;
+    width: 100%;
+  }
+
+  .home-btn button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
   /* .item3 {
     grid-column: 1 / span 4; 
     
@@ -1305,7 +1321,7 @@ ul.sh-cus-ul {
   } */
 
   .dl-btn-three {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0;
   }
 
@@ -1408,6 +1424,7 @@ ul.sh-cus-ul {
   ul.sh-ord-ul {
     font-size: 1rem;
     font-weight: 300;
+    margin-top: 25px;
   }
 
   .sh-cus-title {
@@ -1469,16 +1486,69 @@ ul.sh-cus-ul {
   }
 
   .sh-col1-X {
-    right: -6px;
-    top: -6px;
+    top: 0%;
   }
 
   .sh-col1-X img {
-    height: 3rem;
+    height: 21px;
     border-radius: 50%;
+    padding: 8px 14px;
+    background-color: var(--unnamed-color-bbcf3d);
   }
   /* Styles for viewdetails.html min-width: 1024px ends here*/
   /* Desktop sizes 1024px ends - Here 1024px === 64em  */
+}
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1200px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Desktop sizes 1200px starts - Here 1200px === 75em  */
+@media only screen and (min-width: 75em) {
+  /* Styles for index.html min-width: 1200px starts here*/
+  .fp-form-ul {
+    margin-bottom: 7.5rem;
+  }
+
+  .fp-form-li label {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .fp-form-flex {
+    padding-left: 3.4375rem;
+  }
+
+  .fp-form-li input {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .fp-bg-img {
+    z-index: -1;
+  }
+
+  .fp-logo {
+    padding: 25px 0px 0px 55px;
+  }
+
+  .fp-track {
+    font-size: 0.75rem;
+  }
+  /* Styles for index.html min-width: 1200px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for order-history.html min-width: 1200px starts here*/
+  /* Styles for order-history.html min-width: 1200px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for delivery.html min-width: 1200px starts here*/
+  /* Styles for delivery.html min-width: 1200px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for viewdetails.html min-width: 1200px starts here*/
+  /* Styles for viewdetails.html min-width: 1200px ends here*/
+  /* Desktop sizes 1024px ends - Here 1200px === 75em  */
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1400px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
@@ -2030,7 +2100,7 @@ ul.sh-cus-ul {
   .dl-tray-img {
     border-radius: initial;
     margin-left: 0.625rem;
-    margin-bottom: 1.5625rem;
+    margin-bottom: 0.5625rem;
     width: 40%;
   }
 
@@ -2381,11 +2451,11 @@ ul.sh-cus-ul {
 
   .custom-date-picker {
     position: fixed;
-    height: 85vh;
+    height: 86vh;
     border: 1px solid grey;
     width: 95%;
     margin: auto;
-    top: 14%;
+    top: 13%;
     justify-content: center;
     align-items: flex-start;
     display: none;
@@ -2398,7 +2468,7 @@ ul.sh-cus-ul {
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 360px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* styles for Mobile sizes 360px starts - Here 360px === 22.5rem  */
-@media only screen and (min-width: 22.5rem) and (max-width: 23.0625rem) {
+@media only screen and (min-width: 22.5em) and (max-width: 23.0625em) {
   .nav-view {
     height: fit-content;
     width: fit-content;
@@ -2442,6 +2512,10 @@ ul.sh-cus-ul {
   /* ----------------------------------------------------------------------------------------------------------------- */
 
   /* Styles for delivery.html min-width: 360px starts here*/
+  .dl-tray-img {
+    margin-bottom: 1.5625rem;
+  }
+
   .dl-item-mob.item1-mob {
     margin-top: 58px;
   }
@@ -2541,7 +2615,7 @@ ul.sh-cus-ul {
 
   /* ----------------------------------------------------------------------------------------------------------------- */
 
-  /* Styles for pop-up on  viewdetails.html min-width: 360px starts here*/  
+  /* Styles for pop-up on  viewdetails.html min-width: 360px starts here*/
   .sh-dl-btn-three {
     font-size: 10px;
     padding: 10px 15px;
@@ -2579,7 +2653,7 @@ ul.sh-cus-ul {
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 370px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 370px starts - Here 370px === 23.125rem  */
-@media only screen and (min-width: 23.125rem) and (max-width: 47.5rem) {
+@media only screen and (min-width: 23.125em) and (max-width: 24.9375em) {
   .nav-ul {
     height: fit-content;
     width: fit-content;
@@ -2633,13 +2707,13 @@ ul.sh-cus-ul {
   /* Styles for order-history.html min-width: 370px starts here*/
 
   .ord-rows.ord-row2 {
-    height: 32vh;
+    height: vh;
     top: 8%;
   }
 
   .ord-rows.ord-row1 {
     height: auto;
-    top: 40%;
+    top: 37%;
   }
 
   ul.ord-lists {
@@ -2840,33 +2914,22 @@ ul.sh-cus-ul {
   /* Styles for Pop-up on viewdetails.html min-width: 370px ends here*/
 
   /* ----------------------------------------------------------------------------------------------------------------- */
+}
 
-  /* Styles for date-picker on viewdetails.html min-width: 370px ends here*/
-  .sh-col3-X img {
-    height: 24px;
-    padding: 2px 8px;
-    border-radius: 100%;
-    background-color: #bbcf3d;
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 400px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Mobile sizes 400px starts - Here 400px === 25rem  */
+@media only screen and (min-width: 25rem) and (max-width: 37.5rem) {
+  /*styles for Index.html Page mobile min-width 400px starts here*/
+  .fp-form-flex {
+    height: 92vh;
   }
 
-  .sh-col3-X {
-    position: absolute;
-    top: -28px;
-    right: 0;
+  .fp-form-ul {
+    height: 45vh;
   }
 
-  .custom-date-picker {
-    position: absolute;
-    height: 85vh;
-    border: 1px solid grey;
-    width: 95%;
-    margin: auto;
-    top: 14%;
-    display: none;
-    background-color: white;
-    z-index: 2;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+  .fp-form-li label {
+    font-size: 1rem;
   }
+  /*styles for Index.html Page mobile min-width 400px ends here*/
 }
