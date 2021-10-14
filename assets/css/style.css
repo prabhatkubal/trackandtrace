@@ -5,7 +5,7 @@
   --white: #ffffff;
   --unnamed-color-bbcf3d: #bbcf3d;
   --progline-color-grey: #707070;
-  --progline-color-green: aliceblue;
+  --progline-color-green: #bbcf3d;
 }
 
 html {
@@ -1710,7 +1710,11 @@ ul.sh-cus-ul {
 /* --- XXXXXXXXXX Nav Bar For Mobile XXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 320px starts - Here 320px === 20em  */
 /* 20em is 320px & 37.5em is 600px*/
-@media only screen and (min-width: 20em) and (max-width: 37.5em) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .hide-for-mobile {
+    display: none;
+  }
+
   body {
     overflow: hidden;
   }
@@ -1891,13 +1895,15 @@ ul.sh-cus-ul {
     margin-right: 0;
     align-items: center;
     position: fixed;
-    top: 45%;
+    justify-content: flex-end;
+    top: 40vh;
   }
 
   .ord-rows.ord-row2 {
-    height: 35vh;
+    height: 32vh;
+    justify-content: flex-end;
     width: 100%;
-    top: 10%;
+    top: 8vh;
     position: fixed;
     background-color: white;
   }
@@ -2493,7 +2499,7 @@ ul.sh-cus-ul {
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 360px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* styles for Mobile sizes 360px starts - Here 360px === 22.5rem  */
-@media only screen and (min-width: 22.5em) and (max-width: 23.0625em) {
+@media only screen and (min-width: 360px) and (max-width: 600px) {
   .nav-view {
     height: fit-content;
     width: fit-content;
@@ -2504,7 +2510,9 @@ ul.sh-cus-ul {
   }
   /* styles for order-history.html mobile min-width: 360px starts here */
   .ord-rows.ord-row2 {
-    height: 31%;
+    height: 32vh;
+    top: 8vh;
+    justify-content: flex-end;
   }
 
   ul.ord-filter-items li label {
@@ -2516,10 +2524,6 @@ ul.sh-cus-ul {
     font-size: 12px;
     line-height: 22px;
     font-weight: 600;
-  }
-
-  .ord-rows.ord-row1 {
-    top: 42%;
   }
 
   li.ord-details p {
@@ -2542,7 +2546,7 @@ ul.sh-cus-ul {
   }
 
   .dl-item-mob.item1-mob {
-    margin-top: 58px;
+    
   }
 
   .dl-item-ul li p {
@@ -2663,7 +2667,7 @@ ul.sh-cus-ul {
   }
 
   .sh-col2 {
-    top: 18%;
+    top: 15vh;
   }
 
   .sh-cus-info {
@@ -2678,7 +2682,7 @@ ul.sh-cus-ul {
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 370px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 370px starts - Here 370px === 23.125rem  */
-@media only screen and (min-width: 23.125em) and (max-width: 24.9375em) {
+@media only screen and (min-width: 370px) and (max-width: 399px) {
   .nav-ul {
     height: fit-content;
     width: fit-content;
@@ -2731,14 +2735,9 @@ ul.sh-cus-ul {
 
   /* Styles for order-history.html min-width: 370px starts here*/
 
-  .ord-rows.ord-row2 {
-    height: vh;
-    top: 8%;
-  }
-
   .ord-rows.ord-row1 {
     height: auto;
-    top: 37%;
+    top: 40vh;
   }
 
   ul.ord-lists {
@@ -2824,9 +2823,6 @@ ul.sh-cus-ul {
     font-size: 14px;
   }
 
-  ul.sh-item-text {
-  }
-
   .sh-item-details {
     height: 21.25rem;
   }
@@ -2892,7 +2888,7 @@ ul.sh-cus-ul {
 
   /* Styles for Pop-up on viewdetails.html min-width: 370px starts here*/
   .sh-dl-btn-three {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .sh-ord-title {
@@ -2943,7 +2939,7 @@ ul.sh-cus-ul {
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 400px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Mobile sizes 400px starts - Here 400px === 25rem  */
-@media only screen and (min-width: 25rem) and (max-width: 37.5rem) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
   /*styles for Index.html Page mobile min-width 400px starts here*/
   .fp-form-flex {
     height: 92vh;
