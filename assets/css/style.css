@@ -1502,6 +1502,13 @@ ul.sh-cus-ul {
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1200px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Desktop sizes 1200px starts - Here 1200px === 75em  */
 @media only screen and (min-width: 75em) {
+  .nav-ul a {
+    font-size: 1.125rem;
+  }
+
+  .logo img {
+    height: 20px;
+  }
   /* Styles for index.html min-width: 1200px starts here*/
   .fp-form-ul {
     margin-bottom: 7.5rem;
@@ -1537,6 +1544,24 @@ ul.sh-cus-ul {
   /* ----------------------------------------------------------------------------------------------------------------- */
 
   /* Styles for order-history.html min-width: 1200px starts here*/
+  .ord-title {
+    font-size: 1.25rem;
+    font-family: revert;
+  }
+
+  ul.ord-filter-items li p {
+    font-size: 1rem;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 1rem;
+  }
+
+  ul.ord-filter-items li select {
+    padding: 10px 0px;
+    font-size: 14px;
+    width: 115px;
+  }
   /* Styles for order-history.html min-width: 1200px ends here*/
 
   /* ----------------------------------------------------------------------------------------------------------------- */
