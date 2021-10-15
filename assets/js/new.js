@@ -516,12 +516,12 @@ class DatePicker extends HTMLElement {
       }
       
       .month-day.selected {
-        background: #FF0000;
+        background: #34bd61;
         color: #ffffff;
       }
       
       .month-day:hover {
-        background: #34bd61;
+        background: #FF0000;
       }
 
       .dl-availability {
