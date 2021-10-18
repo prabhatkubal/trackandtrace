@@ -1742,7 +1742,56 @@ ul.sh-cus-ul {
     width: 29.5rem;
     height: 17.5rem;
   }
+
+  .dl-tray-flex li p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .dl-tray-col {
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .view-btn button {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
   /* Styles for delivery.html page min-width: 1400px ends here*/
+
+  /* styles for viewdetails.html page min-width: 1400px starts here */
+  .sh-item-details {
+    height: 50%;
+  }
+
+  .sh-item-img {
+    width: 23.625rem;
+    border-radius: 50%;
+    height: 15.6875rem;
+  }
+
+  p.sh-item-title-p {
+    font-size: 22px;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 20px;
+  }
+
+  ul.sh-item-text {
+    line-height: 40px;
+  }
+
+  .sh-ship-icon {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 25px;
+  }
+  /* styles for viewdetails.html page min-width: 1400px ends here */
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/

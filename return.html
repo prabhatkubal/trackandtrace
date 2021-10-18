@@ -4,36 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Return</title>
   </head>
 
   <body>
     <nav class="nav">
       <div class="logo">
-        <a href="http://">Logo</a>
+        <a href="index.html">
+          <img src="assets/images/Home_Centre.png" alt="logo" />
+        </a>
       </div>
       <ul class="nav-ul">
         <li class="navlinks">
-          <a href="/delivery.html">DELIVERY</a>
+          <a href="delivery.html">DELIVERY</a>
           <div class="nav-underline"></div>
         </li>
         <li class="navlinks">
-          <a href="/return.html">RETURN</a>
+          <a href="return.html">RETURN</a>
           <div class="nav-underline"></div>
         </li>
         <li class="navlinks">
-          <a href="/complaint.html">COMPLAINT</a>
+          <a href="complaint.html">COMPLAINT</a>
           <div class="nav-underline"></div>
         </li>
         <li class="navlinks link-subnav">
           <a>NEED HELP?</a>
           <div class="nav-underline"></div>
           <ul class="sub-nav">
-            <li class="sub-navitems"><a href="http://">CALL</a></li>
-            <li class="sub-navitems"><a href="http://">CHAT</a></li>
-            <li class="sub-navitems"><a href="http://">E MAIL</a></li>
-            <li class="sub-navitems"><a href="http://">MORE</a></li>
+            <li class="sub-navitems"><a href="">CALL</a></li>
+            <li class="sub-navitems"><a href="">CHAT</a></li>
+            <li class="sub-navitems"><a href="">E MAIL</a></li>
+            <li class="sub-navitems"><a href="">MORE</a></li>
           </ul>
         </li>
       </ul>
@@ -84,7 +86,7 @@
         <div class="dl-item-title">
           <span>Order Details</span>
         </div>
-        <ul class="dl-item-ul">
+        <ul class="dl-item-ul dl-item-ul-1">
           <li>
             <p class="dl-ord-no">Order no:</p>
           </li>
@@ -117,7 +119,7 @@
         <div class="dl-item-title">
           <span>Customer Information</span>
         </div>
-        <ul class="dl-item-ul">
+        <ul class="dl-item-ul dl-item-ul-2">
           <li>
             <p class="dl-name">Name:</p>
           </li>
@@ -137,7 +139,10 @@
       </div>
       <div class="dl-item-tray item3">
         <div class="dl-trayitems">
-          <div class="dl-tray-img"></div>
+          <div class="dl-tray-img dl-tray-img-1">
+            <img class="hide-for-desktop" src="assets/images/1.png" alt="">
+            <img class="hide-for-mobile" src="assets/images/1-desktop@2x.png" alt="">
+          </div>
           <div class="dl-tray-col">
             <ul class="dl-tray-flex">
               <li>
@@ -160,12 +165,17 @@
               </li>
             </ul>
             <div class="view-btn">
-              <button class="cta-btn">VIEW DETAILS</button>
+              <a href="viewdetails.html">
+                <button class="cta-btn">VIEW DETAILS</button>
+              </a>
             </div>
           </div>
         </div>
         <div class="dl-trayitems">
-          <div class="dl-tray-img"></div>
+          <div class="dl-tray-img dl-tray-img-2">
+            <img class="hide-for-desktop" src="assets/images/2.png" alt="">
+            <img class="hide-for-mobile" src="assets/images/1-desktop@2x.png" alt="">
+          </div>
           <div class="dl-tray-col">
             <ul class="dl-tray-flex">
               <li>
@@ -188,12 +198,17 @@
               </li>
             </ul>
             <div class="view-btn">
-              <button class="cta-btn">VIEW DETAILS</button>
+              <a href="viewdetails.html">
+                <button class="cta-btn">VIEW DETAILS</button>
+              </a>
             </div>
           </div>
         </div>
         <div class="dl-trayitems">
-          <div class="dl-tray-img"></div>
+          <div class="dl-tray-img dl-tray-img-3">
+            <img class="hide-for-desktop" src="assets/images/3.png" alt="">
+            <img class="hide-for-mobile" src="assets/images/1-desktop@2x.png" alt="">
+          </div>
           <div class="dl-tray-col">
             <ul class="dl-tray-flex">
               <li>
@@ -216,7 +231,42 @@
               </li>
             </ul>
             <div class="view-btn">
-              <button class="cta-btn">VIEW DETAILS</button>
+              <a href="viewdetails.html">
+                <button class="cta-btn">VIEW DETAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="dl-trayitems">
+          <div class="dl-tray-img dl-tray-img-3">
+            <img class="hide-for-desktop" src="assets/images/3.png" alt="">
+            <img class="hide-for-mobile" src="assets/images/1-desktop@2x.png" alt="">
+          </div>
+          <div class="dl-tray-col">
+            <ul class="dl-tray-flex">
+              <li>
+                <p class="dl-return-id">Return ID:</p>
+              </li>
+              <li>
+                <p class="dl-return-date">Return Date:</p>
+              </li>
+              <li>
+                <p class="dl-return-status">Return Status:</p>
+              </li>
+              <li>
+                <p class="dl-item-code">Item Code:</p>
+              </li>
+              <li>
+                <p class="dl-iten-desc">Item Description</p>
+              </li>
+              <li>
+                <p class="dl-return-value">Return Value:</p>
+              </li>
+            </ul>
+            <div class="view-btn">
+              <a href="viewdetails.html">
+                <button class="cta-btn">VIEW DETAILS</button>
+              </a>
             </div>
           </div>
         </div>
@@ -225,7 +275,6 @@
     <div class="home-btn">
       <button class="cta-btn">BACK TO HOME</button>
     </div>
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
-
