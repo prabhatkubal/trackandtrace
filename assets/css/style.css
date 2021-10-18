@@ -1502,6 +1502,39 @@ ul.sh-cus-ul {
   }
   /* Styles for viewdetails.html min-width: 1024px ends here*/
   /* Desktop sizes 1024px ends - Here 1024px === 64em  */
+  /* styles for equivalent of viewdwtails page for return and complaint - returndetails.html*/
+  .rtrn-ord-details {
+    height: 35%;
+    margin-top: 0;
+  }
+
+  .rtrn-cus-info {
+    height: 55%;
+    margin-top: 40px;
+  }
+
+  .rtrn-btm-rgt-cta {
+    width: 100%;
+    padding: 0 15px;
+    float: right;
+  }
+
+  /* styles for equivalent of viewdwtails page for return and complaint - complaintdetails.html */
+  .cpl-ord-details {
+    height: 35%;
+    margin-top: 0;
+  }
+
+  .cpl-cus-info {
+    height: 55%;
+    margin-top: 40px;
+  }
+
+  .cpl-btm-rgt-cta {
+    width: 100%;
+    padding: 0 15px;
+    float: right;
+  }
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1200px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
