@@ -44,7 +44,7 @@ $('.sh-col2-X').on('click', function () {
 // $('.dt-year').html(today.getFullYear());
 
 $('.dl-chng-date').on('click', function () {
-  $('.custom-date-picker').css("display", "flex");
+  $('.custom-date-picker').css("display", "block");
   $('.pop-up-bg-mask').css("opacity", 0.6);
   $('.sh-col3-X').removeClass('hide-for-desktop');
 })
@@ -55,12 +55,11 @@ $('.sh-col3-X').on('click', function () {
 });
 
 //Script For Calender And Date Picker Pop - Up on viewdetails.html page
-let d;
-d = new Date();
 
-let currentYear = new Date().getFullYear();
-let currentMonth = new Date().getMonth();
-let monthNames = [
+
+let yearChosen = new Date().getFullYear();
+let monthChosen = new Date().getMonth();
+let months = [
   "January",
   "February",
   "March",
@@ -75,35 +74,55 @@ let monthNames = [
   "December"
 ];
 
-function daysInMonths(year, month) {
+function getNumberOfDays(year, month) {
   let numDays = new Date(year, month + 1, 0).getDate();
   return numDays;
 }
 
-// console.log(currentYear, currentMonth, daysInMonths(currentYear, currentMonth));
+function renderCal(getNumDays) {
+  let DateToDisplay = document.getElementById('label-date');
+  let monthName = months[monthChosen]
+  DateToDisplay.innerHTML = monthName + yearChosen;
 
-function renderCal(daysInMonths) {
-  let labelMonth = document.getElementById('label-month');
-  let labelYear = document.getElementById('label-year');
-  let month = monthNames[currentMonth]
-  labelMonth.innerHTML = month + currentYear;
-  // labelYear.innerHTML = currentYear; //This line Not Working
+  let dayColumns = document.getElementsByClassName('day-column');
+  for (let x = 1; x < dayColumns.length; x++) {
+    dayColumns[x].innerHTML = "";
+  }
 
-  for (let i = 1; i <= daysInMonths; i++) {
-    let dayPTag = document.createElement('p');
-    dayPTag.style.fontSize = '18px';
+  let firstDay = monthName + ' 1,' + yearChosen;
+  let firstDayOfMonth = new Date(firstDay).getDay();
+  for (let y = 1; y < firstDayOfMonth; y++) {
+    let blankPTag = document.createElement("p");
+    let blankText = document.createTextNode(" ");
+    blankPTag.style.padding = '12px';
+    blankPTag.appendChild(blankText);
+    let dayColumn = document.getElementById(y.toString());
+    dayColumn.appendChild(blankPTag);
+  }
+
+
+  for (let i = 1; i <= getNumDays; i++) {
+    let dayPTag = document.createElement("p");
+    dayPTag.style.fontSize = "18px";
     let dayText = document.createTextNode(i.toString());
     dayPTag.appendChild(dayText);
-
-    let date = month + " " + i.toString() + ", " + currentYear;
+    let date = monthName + " " + i.toString() + ", " + yearChosen;
     //console.log(date);
-
     let dayOfWeek = new Date(date).getDay();
     //console.log(dayOfWeek);
-
     document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
-    // document.getElementById('days-container').style.display = 'flex';
   }
 }
 
-renderCal(daysInMonths(currentYear, currentMonth));
+let selectedMonth = document.getElementById('selectedMonth');
+
+function changeMonth() {
+    if(selectedMonth != null) {
+      monthChosen = selectedMonth.value;
+    }
+    console.log(selectedMonth.value);
+  
+    renderCal(getNumberOfDays(yearChosen, monthChosen));
+}
+
+renderCal(getNumberOfDays(yearChosen, monthChosen));

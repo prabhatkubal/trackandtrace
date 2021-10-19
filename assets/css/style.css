@@ -2617,8 +2617,72 @@ ul.sh-cus-ul {
   }
 
   #days-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .date-flex {
     display: flex;
     justify-content: space-around;
+  }
+
+  select#selectedMonth {
+    width: 18px;
+    border: none;
+    transform: scale(1.4);
+  }
+
+  .dl-date-status {
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .dl-availability {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    font-size: 8px;
+    color: grey;
+    font-weight: 500;
+    height: 15vh;
+    width: 90%;
+    margin-top: 25px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .dl-availability li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .box {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+  }
+
+  .box-1 {
+    background-color: #FF0000;
+  }
+
+  .box-2 {
+    background-color: #EED600;
+  }
+
+  .box-3 {
+    background-color: #00CF6E;
+  }
+
+  .box-4 {
+    background-color: #7DA9FF;
   }
   /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/
 }

@@ -58,8 +58,16 @@
           </div>
           <div class="sh-item-details">
             <div class="sh-item-img">
-              <img class="hide-for-mobie" src="assets/images/vd-desktop.png" alt="" />
-              <img class="hide-for-desktop" src="assets/images/vd-mobile.png" alt="">
+              <img
+                class="hide-for-mobie"
+                src="assets/images/vd-desktop.png"
+                alt=""
+              />
+              <img
+                class="hide-for-desktop"
+                src="assets/images/vd-mobile.png"
+                alt=""
+              />
             </div>
             <ul class="sh-item-text">
               <li class="sh-item-title">
@@ -201,35 +209,67 @@
           <!-- <date-picker format="MMMM DD (DDD), YYYY"></date-picker> -->
           <div id="date-container">
             <div class="month-dropdown-container">
-              <label id="label-month">
+              <label id="label-date">
                 <!-- Month & Year Goes Here  -->
-                <span id="label-year"></span>
               </label>
               <!-- Months For Drop-Down Will Go Here -->
-              <select id="month" name="month">
-                <option value="" selected disabled hidden><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
-                <option value=""><span class="year-current"></span></option>
+              <select onclick="changeMonth()" id="selectedMonth" name="month">
+                <option value="" selected disabled hidden>
+                  <span class="year-current"></span>
+                </option>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
               </select>
             </div>
             <div id="days-container">
-              <div id="1" class="day-column"><p>Mon</p></div>
-              <div id="2" class="day-column"><p>Tue</p></div>
-              <div id="3" class="day-column"><p>Wed</p></div>
-              <div id="4" class="day-column"><p>Thu</p></div>
-              <div id="5" class="day-column"><p>Fri</p></div>
-              <div id="6" class="day-column"><p>Sat</p></div>
-              <div id="0" class="day-column"><p>Sun</p></div>
+              <div class="date-flex">
+                <p>S</p>
+                <p>M</p>
+                <p>T</p>
+                <p>W</p>
+                <p>T</p>
+                <p>F</p>
+                <p>S</p>
+              </div>
+              <div class="date-flex">
+                <div id="0" class="day-column"></div>
+                <div id="1" class="day-column"></div>
+                <div id="2" class="day-column"></div>
+                <div id="3" class="day-column"></div>
+                <div id="4" class="day-column"></div>
+                <div id="5" class="day-column"></div>
+                <div id="6" class="day-column"></div>
+              </div>
+            </div>
+            <div class="dl-date-status">
+              <ul class="dl-availability">
+                <li class="full-booked">
+                  <div class="box box-1"></div>
+                  <span>Full booked</span>
+                </li>
+                <li class="partially-booked">
+                  <div class="box box-2"></div>
+                  <span>Partially booked</span>
+                </li>
+                <li class="available">
+                  <div class="box box-3"></div>
+                  <span>Available</span>
+                </li>
+                <li class="day-off">
+                  <div class="box box-4"></div>
+                  <span>Day off</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
