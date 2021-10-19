@@ -2603,16 +2603,22 @@ ul.sh-cus-ul {
 
   .custom-date-picker {
     position: fixed;
-    height: 86vh;
+    height: 80vh;
     border: 1px solid grey;
-    width: 95%;
+    width: 90%;
     margin: auto;
+    padding: 10px 10px;
     top: 13%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     display: none;
     background-color: white;
     z-index: 2;
+  }
+
+  #days-container {
+    display: flex;
+    justify-content: space-around;
   }
   /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/
 }

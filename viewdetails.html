@@ -198,7 +198,40 @@
           <div class="sh-col3-X hide-for-desktop">
             <img src="./assets/images/X.png" alt="" />
           </div>
-          <date-picker format="MMMM DD (DDD), YYYY"></date-picker>
+          <!-- <date-picker format="MMMM DD (DDD), YYYY"></date-picker> -->
+          <div id="date-container">
+            <div class="month-dropdown-container">
+              <label id="label-month">
+                <!-- Month & Year Goes Here  -->
+                <span id="label-year"></span>
+              </label>
+              <!-- Months For Drop-Down Will Go Here -->
+              <select id="month" name="month">
+                <option value="" selected disabled hidden><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+                <option value=""><span class="year-current"></span></option>
+              </select>
+            </div>
+            <div id="days-container">
+              <div id="1" class="day-column"><p>Mon</p></div>
+              <div id="2" class="day-column"><p>Tue</p></div>
+              <div id="3" class="day-column"><p>Wed</p></div>
+              <div id="4" class="day-column"><p>Thu</p></div>
+              <div id="5" class="day-column"><p>Fri</p></div>
+              <div id="6" class="day-column"><p>Sat</p></div>
+              <div id="0" class="day-column"><p>Sun</p></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="sh-btm-cta-container">
@@ -224,13 +257,6 @@
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/new.js"></script>
-    <!-- <script src="assets/js/mc-calendar.min.js"></script>
-    <script>
-      const myDatePicker = MCDatepicker.create({
-        el: "#datepicker",
-        bodyType: "inline",
-      });
-    </script> -->
+    <!-- <script src="assets/js/new.js"></script> -->
   </body>
 </html>

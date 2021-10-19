@@ -35,20 +35,16 @@ $('.sh-col2-X').on('click', function () {
   $('.sh-col2-cta2').css("display", "none");
 });
 
-// Script for date-picker on viewdetails.html - page
 
-// const monthNames = ["January", "February", "March", "April", "May", "June",
-//   "July", "August", "September", "October", "November", "December"
-// ];
 
-const today = new Date()
-const currentMonth = today.toLocaleString('default', { month: 'long' });
+// const today = new Date()
+// const currentMonth = today.toLocaleString('default', { month: 'long' });
 
-$('.dt-month').html(today.toLocaleString('default', { month: 'long' }));
-$('.dt-year').html(today.getFullYear());
+// $('.dt-month').html(today.toLocaleString('default', { month: 'long' }));
+// $('.dt-year').html(today.getFullYear());
 
 $('.dl-chng-date').on('click', function () {
-  $('.custom-date-picker').css("display","flex");
+  $('.custom-date-picker').css("display", "flex");
   $('.pop-up-bg-mask').css("opacity", 0.6);
   $('.sh-col3-X').removeClass('hide-for-desktop');
 })
@@ -57,3 +53,57 @@ $('.sh-col3-X').on('click', function () {
   $('.custom-date-picker').css("display", "none");
   $('.pop-up-bg-mask').css("opacity", 0.3);
 });
+
+//Script For Calender And Date Picker Pop - Up on viewdetails.html page
+let d;
+d = new Date();
+
+let currentYear = new Date().getFullYear();
+let currentMonth = new Date().getMonth();
+let monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
+function daysInMonths(year, month) {
+  let numDays = new Date(year, month + 1, 0).getDate();
+  return numDays;
+}
+
+// console.log(currentYear, currentMonth, daysInMonths(currentYear, currentMonth));
+
+function renderCal(daysInMonths) {
+  let labelMonth = document.getElementById('label-month');
+  let labelYear = document.getElementById('label-year');
+  let month = monthNames[currentMonth]
+  labelMonth.innerHTML = month + currentYear;
+  // labelYear.innerHTML = currentYear; //This line Not Working
+
+  for (let i = 1; i <= daysInMonths; i++) {
+    let dayPTag = document.createElement('p');
+    dayPTag.style.fontSize = '18px';
+    let dayText = document.createTextNode(i.toString());
+    dayPTag.appendChild(dayText);
+
+    let date = month + " " + i.toString() + ", " + currentYear;
+    //console.log(date);
+
+    let dayOfWeek = new Date(date).getDay();
+    //console.log(dayOfWeek);
+
+    document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
+    // document.getElementById('days-container').style.display = 'flex';
+  }
+}
+
+renderCal(daysInMonths(currentYear, currentMonth));
