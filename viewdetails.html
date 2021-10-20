@@ -206,16 +206,30 @@
           <div class="sh-col3-X hide-for-desktop">
             <img src="./assets/images/X.png" alt="" />
           </div>
+          <!-- <div class="calendar">
+            <div class="inputs">
+              <div>
+                <input id="start" type="text" placeholder="Start Date">          
+              </div>
+              <div>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div>
+                <input id="end" type="text" placeholder="End Date">
+              </div>
+            </div>
+            <div class="cal__container">
+      
+            </div>
+          </div>        -->
           <!-- <date-picker format="MMMM DD (DDD), YYYY"></date-picker> -->
-          <div id="date-container">
-            <div class="month-dropdown-container">
+          <div id="cal-container">
+            <!-- <div class="month-dropdown-container">
               <label id="label-date">
-                <!-- Month & Year Goes Here  -->
               </label>
-              <!-- Months For Drop-Down Will Go Here -->
               <select onclick="changeMonth()" id="selectedMonth" name="month">
                 <option value="" selected disabled hidden>
-                  <span class="year-current"></span>
+                  <span class="default-current-month"></span>
                 </option>
                 <option value="0">January</option>
                 <option value="1">February</option>
@@ -230,6 +244,18 @@
                 <option value="10">November</option>
                 <option value="11">December</option>
               </select>
+            </div> -->
+            <div id="cal-header">
+              <div>
+                <i id="cal-controls" onclick="changeMonth('minus')"><</i>
+                <p id="month"></p>
+                <i id="cal-controls" onclick="changeMonth('add')">></i>
+              </div>
+              <div>
+                <i id="cal-controls" onclick="changeYear('minus')"><</i>
+                <p id="year"></p>
+                <i id="cal-controls" onclick="changeYear('add')">></i>
+              </div>
             </div>
             <div id="days-container">
               <div class="date-flex">
