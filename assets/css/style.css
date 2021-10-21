@@ -1114,8 +1114,22 @@ ul.sh-cus-ul {
   justify-content: space-around;
 }
 
-#cal-controls {
-  font-size: 18px;
+div#cal-controls-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  height: 20px;
+}
+
+#cal-controls img {
+  height: 18px;
+  cursor: pointer;
+}
+
+p#year {
+  margin-bottom: 20px;
 }
 
 #month,

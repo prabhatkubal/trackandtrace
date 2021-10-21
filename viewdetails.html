@@ -246,35 +246,43 @@
               </select>
             </div> -->
             <div id="cal-header">
-              <div>
-                <i id="cal-controls" onclick="changeMonth('minus')"><</i>
+              <div id="cal-controls-container">
+                <i id="cal-controls" onclick="changeMonth('minus')">
+                  <img src="assets/images/caret-left-solid.svg" alt="">
+                </i>
                 <p id="month"></p>
-                <i id="cal-controls" onclick="changeMonth('add')">></i>
+                <i id="cal-controls" onclick="changeMonth('add')">
+                  <img src="assets/images/caret-right-solid.svg" alt="">
+                </i>
               </div>
-              <div>
-                <i id="cal-controls" onclick="changeYear('minus')"><</i>
+              <div id="cal-controls-container">
+                <i id="cal-controls" onclick="changeYear('minus')">
+                  <img src="assets/images/caret-left-solid.svg" alt="">
+                </i>
                 <p id="year"></p>
-                <i id="cal-controls" onclick="changeYear('add')">></i>
+                <i id="cal-controls" onclick="changeYear('add')">
+                  <img src="assets/images/caret-right-solid.svg" alt="">
+                </i>
               </div>
             </div>
             <div id="days-container">
               <div class="date-flex">
-                <p>S</p>
                 <p>M</p>
                 <p>T</p>
                 <p>W</p>
                 <p>T</p>
                 <p>F</p>
                 <p>S</p>
+                <p>S</p>
               </div>
               <div class="date-flex">
-                <div id="0" class="day-column"></div>
                 <div id="1" class="day-column"></div>
                 <div id="2" class="day-column"></div>
                 <div id="3" class="day-column"></div>
                 <div id="4" class="day-column"></div>
                 <div id="5" class="day-column"></div>
                 <div id="6" class="day-column"></div>
+                <div id="0" class="day-column"></div>
               </div>
             </div>
             <div class="dl-date-status">

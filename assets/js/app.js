@@ -74,32 +74,57 @@ function renderCal(getNumDays, newYear, newMonth) {
 
   let dayColumns = document.getElementsByClassName('day-column');
   for (let otherIndex = 0; otherIndex < dayColumns.length; otherIndex++) {
+    // if (otherIndex !== 0) {
+    //   dayColumns[otherIndex].innerHTML = "";
+    // }
     dayColumns[otherIndex].innerHTML = "";
   }
 
   let firstDay = monthName + ' 1,' + newYear;
   let firstDayOfMonth = new Date(firstDay).getDay();
   for (let anotherIndex = 0; anotherIndex < firstDayOfMonth; anotherIndex++) {
-    console.log(anotherIndex);
+    // console.log(firstDayOfMonth);
     let blankPTag = document.createElement("p");
     let blankText = document.createTextNode(" ");
     blankPTag.style.padding = '16px';
     blankPTag.appendChild(blankText);
     let dayColumn = document.getElementById(anotherIndex.toString());
-    dayColumn.appendChild(blankPTag);
+    if (anotherIndex !== 0) {
+      dayColumn.appendChild(blankPTag);
+    }
   }
 
 
   for (let i = 1; i <= getNumDays; i++) {
     let dayPTag = document.createElement("p");
     dayPTag.style.fontSize = "20px";
+    dayPTag.style.cursor = "pointer";
+    dayPTag.style.display = 'flex';
+    dayPTag.style.justifyContent = 'center';
     let dayText = document.createTextNode(i.toString());
     dayPTag.appendChild(dayText);
     let date = monthName + " " + i.toString() + ", " + newYear;
     //console.log(date);
     let dayOfWeek = new Date(date).getDay();
-    //console.log(dayOfWeek);
+    // console.log(dayOfWeek);
     document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
+    if (dayOfWeek === 0) {
+      dayPTag.style.backgroundColor = "#7DA9FF";
+    }
+    if (dayOfWeek === 6) {
+      dayPTag.style.backgroundColor = "#7DA9FF";
+    }
+    dayPTag.addEventListener('click', function () {
+      const clicked_dayPTag = dayPTag.innerHTML;
+      console.log(clicked_dayPTag)
+      dayPTag.forEach(function () {
+        if(this === clicked_dayPTag) {
+          dayPTag.this.style.backgroundColor = 'red';
+        } else {
+          dayPTag.this.style.backgroundColor = 'white';
+        }
+      });
+    });
   }
 }
 
