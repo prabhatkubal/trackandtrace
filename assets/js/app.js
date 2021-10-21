@@ -97,6 +97,7 @@ function renderCal(getNumDays, newYear, newMonth) {
 
   for (let i = 1; i <= getNumDays; i++) {
     let dayPTag = document.createElement("p");
+    dayPTag.classList.add("dayPTag");
     dayPTag.style.fontSize = "20px";
     dayPTag.style.cursor = "pointer";
     dayPTag.style.display = 'flex';
@@ -115,18 +116,17 @@ function renderCal(getNumDays, newYear, newMonth) {
       dayPTag.style.backgroundColor = "#7DA9FF";
     }
     dayPTag.addEventListener('click', function () {
-      const clicked_dayPTag = dayPTag.innerHTML;
-      console.log(clicked_dayPTag)
-      dayPTag.forEach(function () {
-        if(this === clicked_dayPTag) {
-          dayPTag.this.style.backgroundColor = 'red';
-        } else {
-          dayPTag.this.style.backgroundColor = 'white';
-        }
-      });
+      let clicked_dayPTag = dayPTag.innerHTML;
+      this.style.backgroundColor = 'red';
     });
   }
 }
+
+$(document).on("click", ".dayPTag", function(){
+  console.log("HELLO");
+  $(document).find(".dayPTag").css("background", "white");
+  $(this).css("background", "red");
+})
 
 // let selectedMonth = document.getElementById('selectedMonth');
 

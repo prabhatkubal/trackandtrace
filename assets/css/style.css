@@ -251,6 +251,9 @@ nav {
   margin: 0.25rem;
   transition: all 0.4s ease;
 }
+.day-column {
+  width: 10%;
+}
 
 @media only screen and (max-width: 900px) {
   /*----- Top - Navigation ----- || Nav Bar  */
