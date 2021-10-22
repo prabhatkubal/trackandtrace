@@ -1202,19 +1202,19 @@ select#selectedMonth {
 }
 
 .box-1 {
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .box-2 {
-  background-color: #EED600;
+  background-color: #eed600;
 }
 
 .box-3 {
-  background-color: #00CF6E;
+  background-color: #00cf6e;
 }
 
 .box-4 {
-  background-color: #7DA9FF;
+  background-color: #7da9ff;
 }
 
 .confirm-slot {
@@ -1241,7 +1241,7 @@ select#selectedMonth {
     display: none;
   }
 
-  .sh-item-img{
+  .sh-item-img {
     height: 10rem;
     width: 10rem;
   }
@@ -1673,7 +1673,7 @@ select#selectedMonth {
     font-size: 1.125rem;
   }
 
-  .sh-item-img{
+  .sh-item-img {
     height: 15rem;
     width: 15rem;
   }
@@ -1804,7 +1804,31 @@ select#selectedMonth {
   /* Styles for index.html min-width: 1400px ends here*/
 
   /* ----------------------------------------------------------------------------------------------------------------- */
+  .cpl-cus-info {
+    height: 58%;
+  }
 
+  ul.sh-cus-ul {
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .sh-cus-title {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .sh-ord-title {
+    font-size: 22px;
+  }
+
+  ul.sh-ord-ul {
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 20px;
+  }
   /* Styles for order-history.html min-width: 1400px starts here*/
   .nav-ul a {
     font-size: 1.375rem;
@@ -1967,7 +1991,7 @@ select#selectedMonth {
   .hide-for-mobile {
     display: none;
   }
-  .sh-item-details{
+  .sh-item-details {
     padding: 1rem;
   }
 
@@ -2493,7 +2517,7 @@ select#selectedMonth {
   }
 
   .sh-column-container {
-  overflow: auto;
+    overflow: auto;
   }
 
   p.sh-item-title-p {
@@ -2516,10 +2540,9 @@ select#selectedMonth {
   }
 
   .progressbar-container {
-  transform: rotate(
-90deg);
-  margin: 25vh 0 5vh 0;
-  display: block;
+    transform: rotate(90deg);
+    margin: 25vh 0 5vh 0;
+    display: block;
   }
 
   span.sh-ship-date-text {
@@ -2732,7 +2755,10 @@ select#selectedMonth {
     right: 0;
   }
 
- 
+  #days-container {
+    width: 20rem;
+  }
+
   /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/
 }
 /* Mobile sizes 320px starts - ends 320px === 20em  */
@@ -2748,7 +2774,7 @@ select#selectedMonth {
     transform: translateX(-6%);
     box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
   }
-  
+
   /* styles for order-history.html mobile min-width: 360px starts here */
   .ord-rows.ord-row2 {
     height: 32vh;
@@ -2922,7 +2948,6 @@ select#selectedMonth {
   .sh-col1 {
     margin-top: 10vh;
   }
-
 }
 /* styles for Mobile sizes 360px ends - Here*/
 
