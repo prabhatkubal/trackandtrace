@@ -254,6 +254,9 @@ nav {
 .day-column {
   width: 10%;
 }
+.progressbar-container {
+  margin: 0rem 0rem 5rem 0rem;
+}
 
 @media only screen and (max-width: 900px) {
   /*----- Top - Navigation ----- || Nav Bar  */
@@ -650,7 +653,6 @@ li.ord-details p {
 
 /* Styles for viewdetails.html page where the shipment progress bar is located */
 .sh-column-container {
-  overflow: hidden;
 }
 
 .sh-container {
@@ -658,7 +660,6 @@ li.ord-details p {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 1.375rem 1.5625rem;
-  height: 75vh;
 }
 
 .sh-col1 {
@@ -692,16 +693,21 @@ li.ord-details p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 10.5rem;
-  width: 15.5rem;
-  margin-top: 2.1875rem;
-  margin-left: 1.25rem;
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  /* margin: 1rem auto; */
 }
 
 .sh-item-img img {
   position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
 }
 
 .sh-item-details {
@@ -710,7 +716,7 @@ li.ord-details p {
   margin: 0;
   flex-direction: row;
   justify-content: flex-start;
-  height: 11rem;
+  padding: 2rem;
 }
 
 ul.sh-item-text {
@@ -1234,6 +1240,11 @@ select#selectedMonth {
     display: none;
   }
 
+  .sh-item-img{
+    height: 10rem;
+    width: 10rem;
+  }
+
   .logo img {
     padding-left: 1.875rem;
     height: 1.125rem;
@@ -1500,9 +1511,7 @@ select#selectedMonth {
 
   /* Styles for viewdetails.html min-width: 1024px starts here*/
   .sh-item-img {
-    width: 15.625rem;
     margin-top: 0;
-    height: 10.6875rem;
   }
 
   p.sh-item-title-p {
@@ -1661,6 +1670,11 @@ select#selectedMonth {
 @media only screen and (min-width: 1200px) {
   .nav-ul a {
     font-size: 1.125rem;
+  }
+
+  .sh-item-img{
+    height: 15rem;
+    width: 15rem;
   }
 
   .logo img {
@@ -1918,9 +1932,7 @@ select#selectedMonth {
   }
 
   .sh-item-img {
-    width: 23.625rem;
     border-radius: 50%;
-    height: 15.6875rem;
   }
 
   p.sh-item-title-p {
@@ -1953,6 +1965,9 @@ select#selectedMonth {
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .hide-for-mobile {
     display: none;
+  }
+  .sh-item-details{
+    padding: 1rem;
   }
 
   body {
@@ -2430,7 +2445,6 @@ select#selectedMonth {
   }
 
   .sh-container {
-    height: 93vh;
     margin: 0px 10px 8px 10px;
   }
 
@@ -2446,7 +2460,6 @@ select#selectedMonth {
 
   .sh-item-details {
     flex-direction: column;
-    height: 16.875rem;
     justify-content: space-between;
   }
 
@@ -2457,7 +2470,6 @@ select#selectedMonth {
   .sh-item-img {
     width: 14.0625rem;
     height: 6.5625rem;
-    margin: 0;
   }
 
   ul.sh-item-text {
@@ -2476,18 +2488,15 @@ select#selectedMonth {
 
   li.sh-item-title {
     font-size: 14px;
-    height: 0;
-    margin-bottom: 15px;
     font-weight: bold;
   }
 
   .sh-column-container {
-    height: 100vh;
+  overflow: auto;
   }
 
   p.sh-item-title-p {
     font-weight: bold;
-    margin: 0;
   }
 
   p.sh-item-text-li-p {
@@ -2506,7 +2515,10 @@ select#selectedMonth {
   }
 
   .progressbar-container {
-    height: 40vh;
+  transform: rotate(
+90deg);
+  margin: 25vh 0 5vh 0;
+  display: block;
   }
 
   span.sh-ship-date-text {
@@ -2541,13 +2553,12 @@ select#selectedMonth {
 
   /* Vertical Progress bar -- styles for mobile */
   ul.steps {
-    transform: rotate(90deg);
     width: 60%;
     position: relative;
     margin-left: 0;
     padding-bottom: 0;
+    margin: 0 !important;
     z-index: 0;
-    margin-top: 80px;
   }
 
   .step__icon {
@@ -2736,6 +2747,7 @@ select#selectedMonth {
     transform: translateX(-6%);
     box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
   }
+  
   /* styles for order-history.html mobile min-width: 360px starts here */
   .ord-rows.ord-row2 {
     height: 32vh;
@@ -2824,7 +2836,6 @@ select#selectedMonth {
   }
 
   .sh-item-details {
-    height: 21.875rem;
   }
 
   span.sh-ship-date-text {
@@ -2843,8 +2854,6 @@ select#selectedMonth {
   }
 
   ul.steps {
-    margin-top: 85px;
-    margin-left: 15px;
   }
 
   span.step__label {
@@ -2904,6 +2913,15 @@ select#selectedMonth {
   .sh-ord-details {
     margin-top: 12px;
   }
+
+  .progressbar-container {
+    margin: 22vh 5vh 5vh 0;
+  }
+
+  .sh-col1 {
+    margin-top: 10vh;
+  }
+
 }
 /* styles for Mobile sizes 360px ends - Here*/
 
@@ -3056,7 +3074,6 @@ select#selectedMonth {
   }
 
   .sh-item-details {
-    height: 21.25rem;
   }
 
   .sh-ship-icon {
@@ -3075,12 +3092,9 @@ select#selectedMonth {
 
   ul.steps {
     width: 80%;
-    margin-top: 115px;
-    margin-left: -30px;
   }
 
   .progressbar-container {
-    height: 44%;
   }
 
   .step__icon {
@@ -3164,8 +3178,10 @@ select#selectedMonth {
   .sh-col2-cta1 {
     height: 9vh;
   }
+  .progressbar-container {
+    margin: 22vh 5vh 15vh 0;
+  }
   /* Styles for Pop-up on viewdetails.html min-width: 370px ends here*/
-
   /* ----------------------------------------------------------------------------------------------------------------- */
 }
 
@@ -3173,6 +3189,9 @@ select#selectedMonth {
 /* Mobile sizes 400px starts - Here 400px === 25rem  */
 @media only screen and (min-width: 400px) and (max-width: 600px) {
   /*styles for Index.html Page mobile min-width 400px starts here*/
+  .progressbar-container {
+    margin: 22vh 5vh 15vh 0;
+  }
   .fp-form-flex {
     height: 92vh;
   }
