@@ -1088,6 +1088,7 @@ ul.sh-cus-ul {
 
 /* Styles for date-picker  */
 .sh-col3-X img {
+  cursor: pointer;
   height: 24px;
   padding: 2px 8px;
   border-radius: 100%;

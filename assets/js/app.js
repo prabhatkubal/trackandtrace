@@ -110,12 +110,12 @@ function renderCal(getNumDays, newYear, newMonth) {
     let dayOfWeek = new Date(date).getDay();
     // console.log(dayOfWeek);
     document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
-    if (dayOfWeek === 0) {
-      dayPTag.style.backgroundColor = "#7DA9FF";
-    }
-    if (dayOfWeek === 6) {
-      dayPTag.style.backgroundColor = "#7DA9FF";
-    }
+    // if (dayOfWeek === 0) {
+    //   dayPTag.style.backgroundColor = "#7DA9FF";
+    // }
+    // if (dayOfWeek === 6) {
+    //   dayPTag.style.backgroundColor = "#7DA9FF";
+    // }
     dayPTag.addEventListener('click', function () {
       let clicked_dayPTag = dayPTag.innerHTML;
       this.style.backgroundColor = 'red';
@@ -132,7 +132,7 @@ $(document).on("click", ".dayPTag", function () {
   $(this).css("background", "red");
 });
 
-labelDate.innerHTML = months[monthChosen] + yearChosen;
+labelDate.innerHTML = months[monthChosen];
 let selectedMonth = document.getElementById('selectedMonth');
 let defaultCurrentMonth = document.getElementById('default-current-month');
 defaultCurrentMonth.value = monthChosen;
@@ -141,7 +141,7 @@ function changeMonth() {
     monthChosen = selectedMonth.value;
   }
   console.log(selectedMonth.value);
-  labelDate.innerHTML = months[monthChosen] + yearChosen;
+  labelDate.innerHTML = months[monthChosen];
   renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
 }
 
