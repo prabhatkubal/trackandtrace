@@ -42,6 +42,7 @@ navAnimation();
 
 let yearChosen = new Date().getFullYear(); //current year
 let monthChosen = new Date().getMonth(); //current month 0 to 11 where 0 = january & 11 = december
+let labelDate = document.getElementById('label-date');
 let months = [
   "January",
   "February",
@@ -66,8 +67,8 @@ function renderCal(getNumDays, newYear, newMonth) {
   let monthName = months[newMonth]
   let yearPTag = document.getElementById('year');
   yearPTag.innerHTML = newYear;
-  let monthPTag = document.getElementById('month');
-  monthPTag.innerHTML = monthChosen;
+  // let monthPTag = document.getElementById('month');
+  // monthPTag.innerHTML = monthChosen;
 
   // let DateToDisplay = document.getElementById('label-date');
   // DateToDisplay.innerHTML = monthName + yearChosen;
@@ -122,46 +123,52 @@ function renderCal(getNumDays, newYear, newMonth) {
   }
 }
 
-$(document).on("click", ".dayPTag", function(){
-  console.log("HELLO");
+// document.querySelectorAll('dayPTag').addEventListener('click', function () {
+//   dayPTag.find.style.backgroundColor = "white";
+//   this.style.backgroundColor = "red";
+// });
+$(document).on("click", ".dayPTag", function () {
   $(document).find(".dayPTag").css("background", "white");
   $(this).css("background", "red");
-})
+});
 
-// let selectedMonth = document.getElementById('selectedMonth');
+labelDate.innerHTML = months[monthChosen] + yearChosen;
+let selectedMonth = document.getElementById('selectedMonth');
+let defaultCurrentMonth = document.getElementById('default-current-month');
+defaultCurrentMonth.value = monthChosen;
+function changeMonth() {
+  if (selectedMonth.value != null) {
+    monthChosen = selectedMonth.value;
+  }
+  console.log(selectedMonth.value);
+  labelDate.innerHTML = months[monthChosen] + yearChosen;
+  renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
+}
 
-// function changeMonth() {
-//     if(selectedMonth != null) {
-//       monthChosen = selectedMonth.value;
+// function changeMonth(addMinus) {
+//   if (addMinus === "minus") {
+//     if (monthChosen !== 0) {
+//       monthChosen -= 1;
+//       renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
 //     }
-//     console.log(selectedMonth.value);
-
-//     renderCal(getNumberOfDays(yearChosen, monthChosen));
+//     else {
+//       monthChosen = 11;
+//       yearChosen -= 1;
+//       renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
+//     }
+//   } else {
+//     if (monthChosen !== 11) {
+//       monthChosen += 1;
+//       renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
+//     }
+//     else {
+//       monthChosen = 0;
+//       yearChosen += 1;
+//       renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
+//     }
+//   }
 // }
 
-function changeMonth(addMinus) {
-  if (addMinus === "minus") {
-    if (monthChosen !== 0) {
-      monthChosen -= 1;
-      renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
-    }
-    else {
-      monthChosen = 11;
-      yearChosen -= 1;
-      renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
-    }
-  } else {
-    if (monthChosen !== 11) {
-      monthChosen += 1;
-      renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
-    }
-    else {
-      monthChosen = 0;
-      yearChosen += 1;
-      renderCal(getNumberOfDays(yearChosen, monthChosen), yearChosen, monthChosen);
-    }
-  }
-}
 
 function changeYear(addMinus) {
   if (addMinus === "minus") {
