@@ -2174,7 +2174,7 @@ select#selectedMonth {
     width: 100%;
     font-weight: 700;
     padding-bottom: 0;
-    padding-top: 0.9375rem;
+    padding-top: 2rem;
     position: initial;
     font-size: 0.9375rem;
     z-index: 1;
