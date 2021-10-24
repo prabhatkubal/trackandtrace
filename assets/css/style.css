@@ -1206,12 +1206,18 @@ select#selectedMonth {
   align-items: center;
 }
 
+.dl-availability li span {
+  font-size: 14px;
+  color: #b3b2b2;
+  font-weight: 400;
+}
+
 .box {
   width: 40px;
   height: 30px;
   margin-right: 10px;
   border-radius: 2px;
-  border: 1px solid black;
+  border: none;
 }
 
 .box-1 {
