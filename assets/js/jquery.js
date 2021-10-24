@@ -36,20 +36,18 @@ $('.sh-col2-X').on('click', function () {
 });
 
 
-
-// const today = new Date()
-// const currentMonth = today.toLocaleString('default', { month: 'long' });
-
-// $('.dt-month').html(today.toLocaleString('default', { month: 'long' }));
-// $('.dt-year').html(today.getFullYear());
-
+// Date Picker Pop-up
 $('.dl-chng-date').on('click', function () {
   $('.custom-date-picker').css("display", "block");
   $('.pop-up-bg-mask').css("opacity", 0.6);
-  $('.sh-col3-X').removeClass('hide-for-desktop');
+  $('.sh-col3-X').css("display", "block");
+  // for desktop
+  $('.pop-up-bg-mask-desktop').css("display", "block");
+  $('.pop-up-bg-mask-desktop').css("opacity", 0.3);
 })
 
 $('.sh-col3-X').on('click', function () {
+  $('.pop-up-bg-mask-desktop').css("display", "none");
   $('.custom-date-picker').css("display", "none");
   $('.pop-up-bg-mask').css("opacity", 0.3);
 });

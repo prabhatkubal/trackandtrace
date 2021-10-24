@@ -1085,6 +1085,17 @@ ul.sh-cus-ul {
 /* @media only screen and (max-width: 768px) {
  
 } */
+/* pop-up-mask- for Date picker */
+.pop-up-bg-mask-desktop {
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.3); */
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: none;
+}
 
 /* Styles for date-picker  */
 .sh-col3-X img {
@@ -1097,13 +1108,13 @@ ul.sh-cus-ul {
 
 .sh-col3-X {
   position: absolute;
+  display: none;
   top: -28px;
   right: 0;
 }
 
 .custom-date-picker {
   position: fixed;
-  border: 1px solid grey;
   width: fit-content;
   margin: auto;
   padding: 10px 10px;
@@ -1113,6 +1124,8 @@ ul.sh-cus-ul {
   display: none;
   background-color: white;
   z-index: 2;
+  box-shadow: 0px 0px 5px 2px rgb(255 251 251);
+  border-radius: 5px;
 }
 
 #cal-container {
@@ -1630,6 +1643,18 @@ select#selectedMonth {
     border-radius: 50%;
     padding: 8px 14px;
     background-color: var(--unnamed-color-bbcf3d);
+  }
+
+  .sh-col3-X {
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 5px;
+  }
+
+  .sh-col3-X img {
+    height: 22px;
+    padding: 5px 10px;
   }
   /* Styles for viewdetails.html min-width: 1024px ends here*/
   /* Desktop sizes 1024px ends - Here 1024px === 64em  */
