@@ -189,13 +189,11 @@ nav {
 }
 
 .link-subnav {
-  position: relative;
 }
 
 .sub-nav {
   position: absolute;
-  right: 0%;
-  left: 1%;
+  right: 2%;
   top: 55%;
   padding: 5px;
   border-radius: 5px;
@@ -209,9 +207,8 @@ nav {
 
 .subnav-view {
   transform: translateX(0%);
-  top: 55%;
-  right: 0%;
-  left: 1%;
+  top: 60px;
+  width: fit-content;
 }
 
 .sub-navitems {
@@ -298,6 +295,7 @@ nav {
   flex-direction: row;
   padding: 0.9375rem;
   height: 88vh;
+  z-index: -10;
 }
 
 .ord-rows {
