@@ -1248,11 +1248,177 @@ select#selectedMonth {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 760px) {
   .hide-for-mobile {
     display: none;
   }
 }
+/* --- XXXXXXXXXXXXXXXXXXXXXXX i Pad Styles - 768px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Desktop sizes 768px starts - Here 768px === 48em  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hide-for-desktop {
+    display: none;
+  }
+  /* Styles for index.html min-width: 768px starts here*/
+  .fp-form-li input {
+    width: 85%;
+  }
+  /* Styles for index.html min-width: 768px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  /* Styles for order-history.html min-width: 768px starts here*/
+  .ord-rows.ord-row2 {
+    width: 50%;
+  }
+
+  .ord-rows.ord-row1 {
+    margin-right: 1.1875rem;
+  }
+  /* Styles for order-history.html min-width: 768px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  /* Styles for delivery.html min-width: 768px starts here*/
+  .dl-container {
+    padding-bottom: 0;
+    grid-gap: 0 0.625rem;
+    height: 78vh;
+  }
+
+  .item1 {
+    grid-column: 1 / span 3;
+    padding-bottom: 0.5rem;
+  }
+
+  .item2 {
+    grid-column: 4 / span 3;
+  }
+
+  .item3 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .dl-tray-img {
+    width: 20.5rem;
+    height: 11.25rem;
+  }
+
+  .dl-tray-img img {
+    top: 0%;
+    height: auto;
+    width: 100%;
+  }
+
+  .home-btn button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  /* .item3 {
+    grid-column: 1 / span 4; 
+    
+  } */
+
+  .dl-btn-container {
+    width: 95%;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+
+  .dl-item-ul {
+    margin: 0;
+  }
+
+  .dl-item-ul-1 {
+    height: 11.5625rem;
+  }
+
+  .dl-item-ul-2 {
+    margin-top: 30px;
+  }
+
+  .dl-item-ul li p {
+    font-size: 1rem;
+  }
+
+  .dl-item-ul-1 p {
+    margin-top: 0;
+  }
+
+  .dl-item-title {
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .home-btn {
+    height: 8vh;
+    padding: 0 2rem;
+  }
+
+  .view-btn button {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 0px;
+  }
+
+  .dl-tray-flex {
+    margin-bottom: 9px;
+  }
+
+  .dl-item-tray {
+    padding: 0.5rem 1.5625rem 0.5rem 0.3125rem;
+    height: 14.125rem;
+  }
+  /* Styles for delivery.html min-width: 768px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  /* Styles for viewdetails.html min-width: 768px starts here*/
+  .sh-item-img {
+    width: 16rem;
+    height: 10rem;
+  }
+
+  ul.sh-item-text {
+    line-height: 22px;
+    margin-top: 0;
+  }
+
+  .sh-item-details {
+    padding: 1.2rem;
+  }
+
+  .sh-btm-cta {
+    font-size: 8px;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+  }
+  /* Styles for viewdetails.html min-width: 768px ends here*/
+
+  /* Styles for returndetails.html min-width: 768px starts here */
+  ul.sh-ord-ul {
+    line-height: 35px;
+  }
+
+  .sh-ord-details {
+    margin-top: 0;
+  }
+
+  ul.sh-cus-ul {
+    line-height: 35px;
+  }
+  /* Styles for returndetails.html min-width: 768px ends here */
+}
+
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1024px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
 /* Desktop sizes 1024px starts - Here 1024px === 64em  */
 @media only screen and (min-width: 1024px) {
@@ -1453,27 +1619,6 @@ select#selectedMonth {
   .dl-btn-container {
     width: 95%;
   }
-
-  /* .dl-tray-img-1 {
-    background: transparent url("../images/1-desktop.png") 0% 0% no-repeat
-      padding-box;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .dl-tray-img-2 {
-    background: transparent url("../images/1-desktop.png") 0% 0% no-repeat
-      padding-box;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .dl-tray-img-3 {
-    background: transparent url("../images/1-desktop.png") 0% 0% no-repeat
-      padding-box;
-    background-position: center;
-    background-size: contain;
-  } */
 
   .dl-btn-three {
     font-size: 11px;
@@ -2122,6 +2267,14 @@ select#selectedMonth {
   }
 
   /* styles for viewdetails.html page min-width: 1400px ends here */
+}
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1600px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Desktop sizes 1600px starts - Here 1600px === 100em  */
+@media only screen and (min-width: 1600px) {
+  /* Styles for index.html min-width: 1600px starts here*/
+
+  /* Styles for index.html min-width: 1600px ends here*/
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
