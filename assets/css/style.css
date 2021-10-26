@@ -188,9 +188,6 @@ nav {
   position: relative;
 }
 
-.link-subnav {
-}
-
 .sub-nav {
   position: absolute;
   right: 2%;
@@ -254,7 +251,14 @@ nav {
 .progressbar-container {
   margin: 0rem 0rem 5rem 0rem;
 }
-
+button.fp-track.green-btn.test-aman {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  width: 100px;
+}
+/* MOBILE MOBILE MOBILE */
 @media only screen and (max-width: 900px) {
   /*----- Top - Navigation ----- || Nav Bar  */
   .nav-ul {
@@ -650,8 +654,6 @@ li.ord-details p {
 }
 
 /* Styles for viewdetails.html page where the shipment progress bar is located */
-.sh-column-container {
-}
 
 .sh-container {
   display: flex;
@@ -2289,6 +2291,7 @@ select#selectedMonth {
 
   body {
     overflow: hidden;
+    z-index: -1;
   }
 
   /* Index Page styles for mobile */
@@ -3104,9 +3107,6 @@ select#selectedMonth {
     margin-bottom: 1.5625rem;
   }
 
-  .dl-item-mob.item1-mob {
-  }
-
   .dl-item-ul li p {
     font-size: 12px;
     font-weight: 600;
@@ -3154,9 +3154,6 @@ select#selectedMonth {
     font-weight: 300;
   }
 
-  .sh-item-details {
-  }
-
   span.sh-ship-date-text {
     font-size: 14px;
     font-weight: 700;
@@ -3171,10 +3168,6 @@ select#selectedMonth {
     margin-top: 0;
     margin-bottom: 5px;
   }
-
-  ul.steps {
-  }
-
   span.step__label {
     font-size: 11px;
     font-weight: 400;
@@ -3391,9 +3384,6 @@ select#selectedMonth {
     font-size: 14px;
   }
 
-  .sh-item-details {
-  }
-
   .sh-ship-icon {
     height: 40px;
     width: 40px;
@@ -3411,10 +3401,6 @@ select#selectedMonth {
   ul.steps {
     width: 80%;
   }
-
-  .progressbar-container {
-  }
-
   .step__icon {
     width: 26px;
     height: 26px;
