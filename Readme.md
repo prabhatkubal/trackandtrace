@@ -3,7 +3,7 @@
 
 # Open the project in live server in vscode 
 
-# start from front.html file for mobile iPhone 5/SE
+# start from index.html file for mobile iPhone 5/SE
 
 # click - Track button to navigate to next page
 

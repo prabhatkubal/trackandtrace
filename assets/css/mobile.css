@@ -1,0 +1,1252 @@
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* --- XXXXXXXXXX Nav Bar For Mobile XXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Mobile sizes 320px starts - Here 320px === 20em  */
+/* 20em is 320px & 37.5em is 600px*/
+@media only screen and (min-width: 20em) and (max-width: 37.5em) {
+  body {
+    overflow: hidden;
+  }
+
+  /* Index Page styles for mobile */
+  .fp-form-li label {
+    font-size: 0.75rem;
+  }
+
+  .fp-form-flex {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fp-logo {
+    padding: 0px 10px;
+  }
+
+  .fp-logo img {
+    height: 12px;
+  }
+
+  .fp-form-ul {
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .fp-bg-img {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    transform: translateY(15px);
+    height: 30rem;
+  }
+
+  .fp-form-li input {
+    padding: 0.375rem 0.3125rem;
+    width: 95%;
+    font-size: 1.125rem;
+    border-radius: 4px;
+  }
+
+  button.fp-track.green-btn {
+    padding: 0.375rem 1.5625rem;
+    border-radius: 3px;
+  }
+
+  li.fp-form-li a {
+    padding: 0.375rem 2.5rem;
+  }
+
+  /* styles for navigation for 320px mobile */
+  .logo img {
+    height: 0.875rem;
+    margin-top: 5px;
+    padding: 0;
+  }
+  nav {
+    background-color: white;
+    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    height: 8vh;
+  }
+
+  .nav-hr {
+    display: none;
+  }
+
+  .nav-ul li:hover > .nav-underline {
+    opacity: 0;
+  }
+
+  .body {
+    overflow-x: hidden;
+  }
+
+  .sub-nav {
+    opacity: 0;
+  }
+
+  .nav-ul {
+    position: fixed;
+    padding: 2px;
+    top: 8vh;
+    background-color: white;
+    height: 28vh;
+    right: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navlinks {
+    opacity: 0;
+    cursor: pointer;
+    width: 6rem;
+    font: normal normal bold 0.75rem/1.375rem Sofia Pro;
+    padding: 0 15px;
+    padding-top: 8px;
+    box-shadow: 0px 0px 18px #00000015;
+    margin: 1px 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    flex: 0.2;
+    cursor: pointer;
+  }
+
+  .nav-view {
+    transform: translateX(0%);
+  }
+
+  .hamburger li {
+    width: 20px;
+    margin: 3px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 2px);
+  }
+
+  /* styles for order-history.html for 320px mobile starts here */
+  .ord-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+
+  .ord-rows.ord-row2 {
+    top: 9%;
+    position: fixed;
+    flex-direction: column-reverse;
+  }
+
+  ul.ord-lists {
+    overflow-y: scroll;
+    margin-top: 0;
+    width: 95%;
+    height: 47vh;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.9375rem;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .ord-lists::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .ord-lists {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .ord-rows.ord-row1 {
+    width: 100%;
+    height: 60vh;
+    margin-right: 0;
+    align-items: center;
+    position: fixed;
+    top: 45%;
+  }
+
+  .ord-rows.ord-row2 {
+    height: 35vh;
+    width: 100%;
+    top: 10%;
+    position: fixed;
+    background-color: white;
+  }
+
+  .ord-filter {
+    width: 95%;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .ord-title {
+    width: 100%;
+    font-weight: 700;
+    padding-bottom: 0;
+    padding-top: 0.9375rem;
+    position: initial;
+    font-size: 0.9375rem;
+    z-index: 1;
+  }
+
+  .ord-cus-container {
+    border-radius: 20px;
+    margin: 0.625rem;
+    margin-top: 12px;
+    padding: 0.625rem 0.625rem;
+    padding-bottom: 0px;
+    padding-top: 0.375rem;
+    margin-bottom: 0px;
+  }
+
+  ul.ord-cus-ul li p {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 0.625rem;
+  }
+
+  li.ord-details {
+    box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
+    border-radius: 25px;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.9375rem;
+    padding-right: 1.25rem;
+    width: inherit;
+  }
+
+  li.ord-fil-title p {
+    display: none;
+  }
+
+  li.ord-fil-title img {
+    display: -webkit-box;
+    height: 0.9375rem;
+    margin-left: 0px;
+  }
+
+  ul.ord-filter-items {
+    padding: 0.3125rem 0;
+    justify-content: space-around;
+    padding-left: 0.3125rem;
+    border: none;
+    box-shadow: inset 0px 0px 40px 40px #bbcf3d;
+    border-radius: 0;
+    padding-right: 0.625rem;
+  }
+
+  select#type {
+    width: 70px;
+  }
+
+  ul.ord-filter-items li select {
+    font-weight: 500;
+    border: none;
+  }
+
+  select#timeperiod {
+    width: 88px;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 0.625rem;
+    font-weight: 500;
+  }
+
+  li.ord-filter-by {
+    margin-left: 14px;
+  }
+
+  .ord-cus-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+  }
+
+  p.dl-email {
+    margin-bottom: 0;
+  }
+
+  ul.ord-cus-ul {
+    margin-bottom: 10px;
+  }
+
+  li.ord-details p {
+    font-size: 0.625rem;
+    margin: 0;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
+  /*order-history.html page For Mobile  */
+  /* styles for order-history.html for 320px mobile ends here */
+
+  /* Delivery Page For Mobile */
+  /*styles for --- Delivery / Return / Complaint - Page --- starts here*/
+  .dl-item1-container {
+    background-color: white;
+    width: 100%;
+    z-index: 0;
+    display: block;
+    padding-bottom: 15px;
+    height: 40vh;
+  }
+
+  .dl-item-mob.item1-mob {
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    border-radius: 18px;
+    padding: 0rem 0.25rem 0rem 0.25rem;
+    width: 90vw;
+    margin: auto;
+    margin-top: 4.5rem;
+  }
+
+  .dl-item.item2 {
+    display: none;
+  }
+
+  .dl-item-tray.item3 {
+    height: 85vh;
+    padding: 0.5rem 0;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .dl-item-tray::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .dl-item-tray {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .dl-tray-col {
+    height: 195px;
+  }
+
+  .dl-item.item1 {
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    border-radius: 18px;
+    padding: 0rem 0.25rem 0rem 0.25rem;
+    width: 93vw;
+    display: none;
+  }
+
+  .dl-trayitems {
+    z-index: 0;
+    width: 90vw;
+    padding-bottom: 5px;
+    height: 10.625rem;
+    margin: auto;
+    padding-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .dl-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    grid-gap: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .dl-item-ul {
+    padding-left: 0.3125rem;
+    margin-bottom: 0.9375rem;
+    margin-top: 0.75rem;
+  }
+
+  .dl-item-ul li p {
+    font-size: 0.625rem;
+    line-height: 0.8125rem;
+  }
+
+  .dl-item {
+    padding: 0rem 1.25rem 0rem 1.25rem;
+  }
+
+  .dl-item-title {
+    padding-top: 0.325rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
+
+  .dl-btn-container {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    align-items: center;
+    margin-top: 0.9375rem;
+    display: flex;
+    padding: 0 0px;
+    justify-content: space-evenly;
+  }
+
+  .dl-btn-three {
+    font-size: 6.8px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    border-radius: 3px;
+    margin-bottom: 13px;
+    padding: 0.5rem 2px;
+    letter-spacing: 0;
+  }
+
+  .dl-tray-img {
+    border-radius: initial;
+    margin-left: 0.625rem;
+    margin-bottom: 0.5625rem;
+    width: 40%;
+  }
+
+  ul.dl-tray-flex {
+    padding-left: 7px;
+    margin-bottom: 0.3125rem;
+    margin-top: 1.875rem;
+    height: 60%;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 0.625rem;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .view-btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-35%);
+    align-items: center;
+  }
+
+  .home-btn {
+    display: none;
+  }
+
+  .view-btn button {
+    font-size: 0.625rem;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 0.3125rem -0.75rem;
+    letter-spacing: 0;
+    border-radius: 1px;
+  }
+  /* Delivery Page For Mobile */
+  /*styles for --- Delivery / Return / Complaint - Page --- ends here*/
+
+  /* viewdetails.html Page For Mobile */
+  /*styles for --- viewdetails.html & Progressbar or steps progress bar- Page --- starts here*/
+  .sh-ord-details {
+    display: none;
+  }
+
+  .sh-cus-info {
+    display: none;
+  }
+
+  .sh-col2-cta2 {
+    display: none;
+  }
+
+  .sh-btm-rgt-cta {
+    display: none;
+  }
+
+  .sh-container {
+    height: 93vh;
+    margin: 0px 10px 8px 10px;
+  }
+
+  .sh-col1 {
+    margin-top: 9vh;
+    width: 100%;
+    padding-top: 0.3125rem;
+  }
+
+  .sh-col1-X {
+    display: none;
+  }
+
+  .sh-item-details {
+    flex-direction: column;
+    height: 16.875rem;
+    justify-content: space-between;
+  }
+
+  .sh-col2 {
+    display: none;
+  }
+
+  .sh-item-img {
+    width: 14.0625rem;
+    height: 6.5625rem;
+    margin: 0;
+  }
+
+  ul.sh-item-text {
+    width: 100%;
+    padding-left: 1.25rem;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  ul.sh-item-text li {
+    line-height: 0;
+  }
+
+  li.sh-item-title {
+    font-size: 14px;
+    height: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .sh-column-container {
+    height: 100vh;
+  }
+
+  p.sh-item-title-p {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .sh-ship-date {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .sh-ship-icon {
+    height: 28px;
+    width: 28px;
+  }
+
+  .progressbar-container {
+    height: 40vh;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .sh-btm-cta-container {
+    justify-content: space-evenly;
+    padding: 0 0.625rem;
+  }
+
+  .sh-btm-lft-cta {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sh-btm-lft-cta button {
+    margin: 0;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 9px;
+    padding: 0.525rem 2px;
+    font-weight: 700;
+    letter-spacing: 0px;
+  }
+
+  .sh-track-ship button {
+    padding: 0.525rem 20px;
+  }
+
+  /* Vertical Progress bar -- styles for mobile */
+  ul.steps {
+    transform: rotate(90deg);
+    width: 60%;
+    position: relative;
+    margin-left: 0;
+    padding-bottom: 0;
+    z-index: 0;
+    margin-top: 80px;
+  }
+
+  .step__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .step__label {
+    transform: rotate(-90deg);
+    width: 120px;
+    top: -220px;
+    left: 80px;
+    font-size: 0.625rem;
+    font-weight: 300;
+  }
+
+  .step--complete .step__icon {
+    content: url("/assets/images/icons8-double-tick-64.png");
+    padding: 3px;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .step__icon:before {
+    height: 4px;
+    width: 4px;
+  }
+
+  .hide-for-desktop {
+    display: block;
+  }
+
+  .customer-order-details button {
+    font-size: 0.5625rem;
+    padding: 0.525rem 0.625rem;
+    z-index: 2;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .customer-order-details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  /*Mobile Styles for pop-up after clicking .customer-order-details button starts here */
+  .pop-up-bg-mask {
+    position: absolute;
+    /* background: rgba(0, 0, 0, 0.3); */
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+  }
+
+  .sh-col1 {
+    z-index: 0;
+  }
+
+  .sh-col2 {
+    display: none;
+    position: absolute;
+    width: 90%;
+    padding: 2px 6px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: rgb(100 100 111 / 20%) 0px 0px 8px 2px;
+    margin: 0 auto;
+    top: 15%;
+    border-radius: 15px;
+  }
+
+  .sh-col2-X img {
+    height: 24px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col2-X {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .sh-ord-details {
+    display: none;
+  }
+
+  .sh-cus-info {
+    display: none;
+    margin-bottom: 0.5rem;
+    box-shadow: rgb(163 163 163 / 20%) 0px 0px 8px 2px;
+    margin-top: 0.9375rem;
+  }
+
+  .sh-col2-cta2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+  }
+
+  .sh-btm-cta-container {
+    z-index: -1;
+  }
+
+  .sh-dl-btn-three {
+    margin-bottom: 0;
+    padding: 0.625rem 0.8125rem;
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+
+  .sh-col2-cta1 {
+    display: none;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.125rem;
+  }
+
+  .sh-ord-details {
+    margin: 0;
+    box-shadow: rgb(163 163 163 / 20%) 0px 0px 8px 2px;
+    margin-top: 10px;
+  }
+
+  .sh-ord-title {
+    font-size: 0.875rem;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 0.625rem;
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 15px;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 0.625rem;
+    font-weight: 300;
+    margin: 18px 0;
+    line-height: 16px;
+  }
+
+  .sh-cus-title {
+    font-size: 14px;
+  }
+  /* Mobile Styles for pop-up after clicking .customer-order-details button starts here */
+
+  /* viewdetails.html Page For Mobile */
+  /*styles for --- viewdetails.html & Progressbar or steps progress bar- Page --- Ends here*/
+
+  /* Styles for date-picker on viewdetails.html min-width: 320px starts here*/
+
+  .sh-col3-X img {
+    height: 22px;
+    padding: 2px 8px;
+    border-radius: 100%;
+    background-color: #bbcf3d;
+  }
+
+  .sh-col3-X {
+    position: absolute;
+    top: -28px;
+    right: 0;
+  }
+
+  .custom-date-picker {
+    position: fixed;
+    height: 86vh;
+    border: 1px solid grey;
+    width: 95%;
+    margin: auto;
+    top: 13%;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+    background-color: white;
+    z-index: 2;
+  }
+  /* Styles for date-picker on viewdetails.html min-width: 320px ends here*/
+}
+/* Mobile sizes 320px starts - ends 320px === 20em  */
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 360px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* styles for Mobile sizes 360px starts - Here 360px === 22.5rem  */
+@media only screen and (min-width: 22.5em) and (max-width: 23.0625em) {
+  .nav-view {
+    height: fit-content;
+    width: fit-content;
+    background-color: #fbfbfb;
+    padding: 5px;
+    transform: translateX(-6%);
+    box-shadow: rgb(163 163 163 / 20%) 2px 1px 10px 2px;
+  }
+  /* styles for order-history.html mobile min-width: 360px starts here */
+  .ord-rows.ord-row2 {
+    height: 31%;
+  }
+
+  ul.ord-filter-items li label {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  ul.ord-cus-ul li p {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  .ord-rows.ord-row1 {
+    top: 42%;
+  }
+
+  li.ord-details p {
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  ul.ord-lists {
+    height: 50vh;
+  }
+  /* styles for order-history.html mobile min-width: 360px starts here */
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for delivery.html min-width: 360px starts here*/
+  .dl-tray-img {
+    margin-bottom: 1.5625rem;
+  }
+
+  .dl-item-mob.item1-mob {
+    margin-top: 58px;
+  }
+
+  .dl-item-ul li p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+    padding: 0.5rem 1px;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .dl-tray-img img {
+    width: 95%;
+    top: 21%;
+    left: 2%;
+  }
+  /* Styles for delivery.html min-width: 360px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for viewdetails.html min-width: 360px starts here*/
+
+  /* .sh-item-img {
+    background: transparent url(../images/vd-mobile.png) 0% 0% no-repeat
+      padding-box;
+    margin: 0;
+    height: 100%;
+    background-position: center;
+    width: 15.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+
+  .sh-item-img {
+    width: 16.0625rem;
+    height: 8.5625rem;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .sh-item-details {
+    height: 21.875rem;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .sh-ship-icon {
+    height: 33px;
+    width: 33px;
+  }
+
+  .sh-ship-date {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  ul.steps {
+    margin-top: 85px;
+    margin-left: 15px;
+  }
+
+  span.step__label {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .customer-order-details button {
+    font-size: 10px;
+  }
+
+  .sh-track-ship button {
+    font-size: 10px;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 10px;
+  }
+
+  .sh-container {
+    margin-bottom: 10px;
+  }
+  /* Styles for viewdetails.html min-width: 360px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for pop-up on  viewdetails.html min-width: 360px starts here*/
+  .sh-dl-btn-three {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 13px;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 13px;
+  }
+
+  .sh-cus-title {
+    font-size: 16px;
+  }
+
+  .sh-ord-title {
+    font-size: 16px;
+  }
+
+  .sh-col2 {
+    top: 18%;
+  }
+
+  .sh-cus-info {
+    margin-top: 1rem;
+  }
+
+  .sh-ord-details {
+    margin-top: 12px;
+  }
+}
+/* styles for Mobile sizes 360px ends - Here*/
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 370px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Mobile sizes 370px starts - Here 370px === 23.125rem  */
+@media only screen and (min-width: 23.125em) and (max-width: 24.9375em) {
+  .nav-ul {
+    height: fit-content;
+    width: fit-content;
+  }
+  /*styles for Index.html Page mobile min-width 370px starts here*/
+  .fp-form-li {
+    width: 90%;
+  }
+
+  li.fp-form-li-btn {
+    align-items: center;
+  }
+
+  li.fp-form-li a {
+    padding: 0;
+  }
+
+  .fp-form-li label {
+    font-size: 0.9375rem;
+  }
+
+  .fp-track {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  button.fp-track.green-btn {
+    padding: 0.35rem 2.5rem;
+  }
+
+  .fp-form-li input {
+    padding: 12px 10px;
+  }
+
+  .fp-bg-img {
+    width: 100%;
+    height: 22.5rem;
+  }
+
+  .fp-logo img {
+    height: 18px;
+  }
+
+  .fp-logo {
+    padding: 0 1rem;
+  }
+  /*styles for Index.html Page mobile min-width 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for order-history.html min-width: 370px starts here*/
+
+  .ord-rows.ord-row2 {
+    height: vh;
+    top: 8%;
+  }
+
+  .ord-rows.ord-row1 {
+    height: auto;
+    top: 37%;
+  }
+
+  ul.ord-lists {
+    height: 60vh;
+  }
+
+  ul.ord-cus-ul li p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  li.ord-details p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  /* Styles for order-history.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for delivery.html min-width: 370px starts here*/
+  .dl-item1-container {
+    height: 35vh;
+  }
+
+  .dl-btn-three {
+    font-size: 8px;
+  }
+
+  .dl-item-ul li p {
+    font-size: 12px;
+  }
+
+  .dl-item-title {
+    font-size: 1rem;
+  }
+
+  .dl-tray-flex li p {
+    font-size: 12px;
+    line-height: 26px;
+  }
+
+  .dl-trayitems {
+    height: 210px;
+  }
+
+  .dl-tray-col {
+    height: 230px;
+  }
+
+  .dl-tray-img {
+    height: 12rem;
+    width: 45%;
+  }
+
+  ul.dl-tray-flex {
+    margin-top: 2.2rem;
+  }
+
+  .view-btn button {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+
+  .view-btn {
+    height: 5vh;
+  }
+  /* Styles for delivery.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for viewdetails.html min-width: 370px starts here*/
+  .sh-item-img {
+    height: 9.375rem;
+    width: 16.875rem;
+  }
+
+  p.sh-item-title-p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  p.sh-item-text-li-p {
+    font-size: 14px;
+  }
+
+  ul.sh-item-text {
+  }
+
+  .sh-item-details {
+    height: 21.25rem;
+  }
+
+  .sh-ship-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  span.sh-ship-date-text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .sh-ship-date {
+    height: 8vh;
+  }
+
+  ul.steps {
+    width: 80%;
+    margin-top: 115px;
+    margin-left: -30px;
+  }
+
+  .progressbar-container {
+    height: 44%;
+  }
+
+  .step__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .step__icon:before {
+    height: 6px;
+    width: 6px;
+  }
+
+  .step__label {
+    font-size: 14px;
+    top: -235px;
+    left: 95px;
+  }
+
+  .sh-btm-lft-cta button {
+    font-size: 11px;
+  }
+
+  .customer-order-details button {
+    font-size: 11px;
+  }
+
+  .customer-order-details {
+    margin-bottom: 10px;
+  }
+
+  .sh-btm-cta-container {
+    margin-top: 18px;
+  }
+  /* Styles for viewdetails.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+
+  /* Styles for Pop-up on viewdetails.html min-width: 370px starts here*/
+  .sh-dl-btn-three {
+    font-size: 11px;
+  }
+
+  .sh-ord-title {
+    font-size: 1.125rem;
+  }
+
+  ul.sh-ord-ul {
+    font-size: 0.875rem;
+    margin: 30px 10px;
+    line-height: 22px;
+  }
+
+  .sh-cus-title {
+    font-size: 1.125rem;
+  }
+
+  ul.sh-cus-ul {
+    font-size: 0.875rem;
+    margin: 35px 5px;
+    line-height: 25px;
+  }
+
+  .sh-cus-info {
+    margin-top: 1.25rem;
+  }
+
+  .sh-col2-X img {
+    padding: 2px 9px;
+    height: 30px;
+  }
+
+  .sh-col2-X {
+    top: -35px;
+  }
+
+  .sh-col2-cta2 {
+    height: 6vh;
+    margin-top: 10px;
+  }
+
+  .sh-col2-cta1 {
+    height: 9vh;
+  }
+  /* Styles for Pop-up on viewdetails.html min-width: 370px ends here*/
+
+  /* ----------------------------------------------------------------------------------------------------------------- */
+}
+
+/* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile styles - 400px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
+/* Mobile sizes 400px starts - Here 400px === 25rem  */
+@media only screen and (min-width: 25rem) and (max-width: 37.5rem) {
+  /*styles for Index.html Page mobile min-width 400px starts here*/
+  .fp-form-flex {
+    height: 92vh;
+  }
+
+  .fp-form-ul {
+    height: 45vh;
+  }
+
+  .fp-form-li label {
+    font-size: 1rem;
+  }
+  /*styles for Index.html Page mobile min-width 400px ends here*/
+}
