@@ -40,6 +40,7 @@ $('.sh-col2-X').on('click', function () {
 
 // Date Picker Pop-up
 $('.dl-chng-date').on('click', function () {
+  $('body').css("overflow", "hidden");
   $('.custom-date-picker').css("display", "block");
   $('.pop-up-bg-mask').css("opacity", 0.6);
   $('.sh-col3-X').css("display", "block");

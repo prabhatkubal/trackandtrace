@@ -981,7 +981,7 @@ ul.sh-cus-ul {
 }
 
 .step--ongoing .step__icon {
-	content: url(../../assets/images/spinner-of-dots-2x.png);
+	content: url("../images/spinner-of-dots-2x.png");
 	padding: 3px;
 	height: 2rem;
 	padding: 8px;
