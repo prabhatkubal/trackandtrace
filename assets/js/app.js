@@ -99,7 +99,7 @@ function renderCal(getNumDays, newYear, newMonth) {
   for (let i = 1; i <= getNumDays; i++) {
     let dayPTag = document.createElement("p");
     dayPTag.classList.add("dayPTag");
-    dayPTag.style.fontSize = "20px";
+    dayPTag.style.fontSize = "18px";
     dayPTag.style.cursor = "pointer";
     dayPTag.style.display = 'flex';
     dayPTag.style.justifyContent = 'center';
@@ -119,6 +119,7 @@ function renderCal(getNumDays, newYear, newMonth) {
     dayPTag.addEventListener('click', function () {
       let clicked_dayPTag = dayPTag.innerHTML;
       this.style.backgroundColor = 'red';
+      this.style.color = 'white';
     });
   }
 }
@@ -130,6 +131,8 @@ function renderCal(getNumDays, newYear, newMonth) {
 $(document).on("click", ".dayPTag", function () {
   $(document).find(".dayPTag").css("background", "white");
   $(this).css("background", "red");
+  $(document).find(".dayPTag").css("color", "black");
+  $(this).css("color", "white");
 });
 
 labelDate.innerHTML = months[monthChosen];

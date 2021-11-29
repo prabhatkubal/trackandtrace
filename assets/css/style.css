@@ -1181,6 +1181,10 @@ p#year {
 	justify-content: space-around;
 }
 
+.days-names {
+	color: grey;
+}
+
 select#selectedMonth {
 	width: 18px;
 	border: none;
@@ -1456,6 +1460,59 @@ select#selectedMonth {
 		line-height: 35px;
 	}
 	/* Styles for returndetails.html min-width: 768px ends here */
+
+	/* Styles for Calender min-width: 768px starts here */
+	#days-container {
+		width: 30rem;
+		margin-top: 10px;
+		height: 28rem;
+	}
+
+	.days-names {
+		font-size: 12px;
+	}
+
+	.box {
+		width: 40px;
+		height: 25px;
+	}
+
+	.dl-availability {
+		width: 95%;
+		grid-gap: 5px 50px;
+		height: 5rem;
+	}
+
+	#cal-header {
+		width: 45%;
+	}
+
+	div#cal-controls-container {
+		width: 35%;
+	}
+
+	.day-column {
+		display: flex;
+		flex-direction: column;
+		width: 10%;
+	}
+
+	.sh-col3-X {
+		top: 5px;
+		right: 5px;
+	}
+
+	p.dayPTag {
+		align-items: center;
+		height: 45px;
+		border-radius: 5px;
+		margin: 12px 0px;
+	}
+
+	.day-column-container {
+		margin-top: 5px;
+	}
+	/* Styles for Calender min-width: 768px ends here */
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1024px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
@@ -1902,6 +1959,65 @@ select#selectedMonth {
 		padding: 0 15px;
 		float: right;
 	}
+
+	/* Styles for Calender min-width: 768px starts here */
+	.custom-date-picker.dt {
+		top: 11%;
+	}
+
+	#days-container {
+		width: 30rem;
+		margin-top: 10px;
+		height: 26rem;
+	}
+
+	#cal-container {
+		margin-bottom: 0;
+	}
+
+	.days-names {
+		font-size: 12px;
+	}
+
+	.box {
+		width: 40px;
+		height: 25px;
+	}
+
+	.dl-availability {
+		width: 95%;
+		grid-gap: 5px 50px;
+		margin-top: 0;
+		height: 5rem;
+		padding-bottom: 25px;
+	}
+
+	#cal-header {
+		width: 45%;
+	}
+
+	div#cal-controls-container {
+		width: 35%;
+	}
+
+	.day-column {
+		display: flex;
+		flex-direction: column;
+		width: 10%;
+	}
+
+	.sh-col3-X {
+		top: 5px;
+		right: 5px;
+	}
+
+	p.dayPTag {
+		align-items: center;
+		height: 45px;
+		border-radius: 5px;
+		margin: 9px 0px;
+	}
+	/* Styles for Calender min-width: 768px ends here */
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Desktop Styles - 1200px XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
@@ -2360,6 +2476,17 @@ select#selectedMonth {
 	/* Styles for index.html min-width: 1600px starts here*/
 
 	/* Styles for index.html min-width: 1600px ends here*/
+
+	/* styles for viewdetails.html page min-width: 1400px starts here */
+	span.step__label {
+		left: -3px;
+		font-size: 18px;
+	}
+
+	.progressbar-container {
+		height: 45rem;
+	}
+	/* styles for viewdetails.html page min-width: 1400px ends here */
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
