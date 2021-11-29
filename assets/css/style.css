@@ -2191,6 +2191,12 @@ select#selectedMonth {
 		height: 45px;
 		width: 45px;
 	}
+
+	ul.steps {
+		width: 85%;
+		transform: rotate(90deg) translate(5%, -75%);
+		margin-top: 37%;
+	}
 	/* Styles for viewdetails.html min-width: 1200px ends here*/
 	/* Desktop sizes 1024px ends - Here 1200px === 75em  */
 }
