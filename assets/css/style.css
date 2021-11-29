@@ -981,7 +981,7 @@ ul.sh-cus-ul {
 }
 
 .step--ongoing .step__icon {
-	content: url(/assets/images/spinner-of-dots-2x.png);
+	content: url(../../assets/images/spinner-of-dots-2x.png);
 	padding: 3px;
 	height: 2rem;
 	padding: 8px;
@@ -1058,7 +1058,7 @@ ul.sh-cus-ul {
 .step--complete .step__icon {
 	-webkit-animation: bounce 0.5s ease-in-out;
 	animation: bounce 0.5s ease-in-out;
-	content: url("/fakeassets/check.png");
+	content: url("../../fakeassets/check.png");
 	background-color: #0ba700;
 	border-color: #0ba700;
 	color: #fff;
