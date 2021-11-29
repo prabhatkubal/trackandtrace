@@ -1,8 +1,9 @@
 // Script for progress bar on viewdetails.html - page
 $('.steps').on('click', '.step--active', function () {
-  $(this).removeClass('step--incomplete').addClass('step--complete');
+  $(this).removeClass('step--incomplete step--ongoing').addClass('step--complete');
   $(this).removeClass('step--active').addClass('step--inactive');
   $(this).next().removeClass('step--inactive').addClass('step--active');
+  $(this).next().addClass('step--ongoing');
 });
 
 $('.steps').on('click', '.step--complete', function () {
@@ -10,6 +11,7 @@ $('.steps').on('click', '.step--complete', function () {
   $(this).removeClass('step--inactive').addClass('step--active');
   $(this).nextAll().removeClass('step--complete').addClass('step--incomplete');
   $(this).nextAll().removeClass('step--active').addClass('step--inactive');
+  $(this).nextAll().removeClass('step--ongoing');
 });
 
 // Script for pop-up on viewdetails.html - page
