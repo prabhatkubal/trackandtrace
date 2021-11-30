@@ -87,7 +87,7 @@ function renderCal(getNumDays, newYear, newMonth) {
     // console.log(firstDayOfMonth);
     let blankPTag = document.createElement("p");
     let blankText = document.createTextNode(" ");
-    blankPTag.style.padding = '16px';
+    blankPTag.style.height = '24px';
     blankPTag.appendChild(blankText);
     let dayColumn = document.getElementById(anotherIndex.toString());
     if (anotherIndex !== 0) {
