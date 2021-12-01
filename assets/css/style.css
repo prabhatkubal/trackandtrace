@@ -2193,9 +2193,9 @@ select#selectedMonth {
 	}
 
 	ul.steps {
-		width: 85%;
+		width: 45rem;
 		transform: rotate(90deg) translate(5%, -75%);
-		margin-top: 37%;
+		margin-top: 35%;
 	}
 	/* Styles for viewdetails.html min-width: 1200px ends here*/
 	/* Desktop sizes 1024px ends - Here 1200px === 75em  */
@@ -2477,9 +2477,9 @@ select#selectedMonth {
 	}
 
 	/* New Changes Nov2021 */
-	.steps {
-		width: 85%;
-		margin-top: 35%;
+	ul.steps {
+		width: 45rem;
+		margin-top: 30%;
 		margin-left: 20px;
 	}
 
@@ -2507,7 +2507,25 @@ select#selectedMonth {
 	.progressbar-container {
 		height: 45rem;
 	}
+
+	ul.steps {
+		width: 50rem;
+		margin-left: -1rem;
+		margin-top: 30%;
+	}
 	/* styles for viewdetails.html page min-width: 1400px ends here */
+}
+
+@media only screen and (min-width: 1900px) {
+	body {
+		width: 1920px;
+	}
+
+	ul.steps {
+		margin-left: 6rem;
+		margin-top: 26%;
+		width: 50rem;
+	}
 }
 
 /* --- XXXXXXXXXXXXXXXXXXXXXXX Mobile Styles XXXXXXXXXXXXXXXXXXXXXXX --- XXXXXXXXXXXXXXXXXXXXX*/
@@ -2923,16 +2941,16 @@ select#selectedMonth {
 		margin-top: 0.9375rem;
 		display: flex;
 		padding: 0 0px;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 
 	.dl-btn-three {
-		font-size: 6.8px;
+		font-size: 6px;
 		font-weight: 700;
 		letter-spacing: 0px;
 		border-radius: 3px;
 		margin-bottom: 13px;
-		padding: 0.5rem 2px;
+		padding: 8px 5px;
 		letter-spacing: 0;
 	}
 
@@ -2944,7 +2962,7 @@ select#selectedMonth {
 	}
 
 	ul.dl-tray-flex {
-		padding-left: 7px;
+		padding-left: 12px;
 		margin-bottom: 0.3125rem;
 		margin-top: 1.875rem;
 		height: 60%;
@@ -3351,8 +3369,8 @@ select#selectedMonth {
 	}
 
 	.dl-btn-three {
-		font-size: 8px;
-		padding: 0.5rem 1px;
+		font-size: 7px;
+		padding: 8px 5px;
 	}
 
 	.dl-tray-flex li p {
@@ -3562,7 +3580,8 @@ select#selectedMonth {
 	}
 
 	.dl-btn-three {
-		font-size: 8px;
+		font-size: 7px;
+		padding: 8px 6px;
 	}
 
 	.dl-item-ul li p {
